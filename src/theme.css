@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+:root {
+  --black: rgb(0, 0, 0);
+  --light: rgb(255, 255, 255);
+  --accent: rgb(71, 68, 68);
+  --darkAccent: rgb(54, 54, 54);
+  --lightAccent: rgb(242, 242, 242);
+  --gray: rgb(130, 130, 130);
+  --darkGray: rgb(79, 79, 79);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, San sans-serif;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.container {
+  max-width: 1400px;
+  width: 85%;
+  margin: auto;
+}
