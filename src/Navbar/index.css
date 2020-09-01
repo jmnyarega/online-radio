@@ -13,10 +13,10 @@
 
 .logo {
   flex: 1;
-  margin-left: 1em;
+  margin-left: 2em;
 }
 
 .nav-list {
   list-style: none;
-  margin-right: 1em;
+  margin-right: 2em;
 }
