@@ -21,6 +21,8 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 1.3rem;
   margin: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .container {
