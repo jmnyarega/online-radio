@@ -30,3 +30,50 @@
 .hero-btn {
   float: right;
 }
+
+.mostlistened-container {
+  padding: 0;
+}
+
+.mostlistened-container-list {
+  font-size: 1rem;
+  list-style: none;
+  height: 50px;
+  width: 70%;
+  background-color: var(--lightAccent);
+  filter: drop-shadow(0px 4px 4px var(--darkAccent));
+
+  margin-top: 1em;
+  padding: 0 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mostlistened-container-list:hover {
+  filter: drop-shadow(0px 1px 1px var(--darkAccent));
+}
+
+.mostlistened__play {
+  color: var(--darkAccent);
+}
+
+.mostlistened__radio-name {
+  color: var(--darkAccent);
+}
+
+.mostlistened__rate {
+  color: var(--gray);
+}
+
+.mostlistened__country {
+  color: var(--gray);
+}
+
+.mostlistened__line {
+  color: var(--lightAccent);
+  padding-left: 0.5rem;
+  font-weight: 900;
+  padding-top: 0.5em;
+  cursor: pointer;
+}

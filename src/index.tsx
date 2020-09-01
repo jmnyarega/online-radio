@@ -6,6 +6,7 @@ import "./utils/css/background.css";
 import "./utils/css/layout.css";
 import "./utils/css/typography.css";
 import "./utils/css/button.css";
+import "./utils/css/shapes.css";
 
 ReactDOM.render(
   <React.StrictMode>

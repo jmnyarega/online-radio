@@ -9,9 +9,49 @@ const Home = () => (
         <div className="col hero-toplist">
           <div className="row d-center">
             <Disc className="col" />
-            <h4 className="title title__small inline col">
-              Most listened Stations
-            </h4>
+            <h4 className="title title__small col">Most listened Stations</h4>
+          </div>
+          <div className="mostlistened">
+            <ul className="mostlistened-container">
+              <li className="mostlistened-container-list link">
+                <span className="mostlistened__number">01</span>
+                <span className="mostlistened__play play"></span>
+                <span className="mostlistened__radio-name">Radio one</span>
+                <span className="mostlistened__country">Russian</span>
+                <span className="mostlistened__rate">12 kbps</span>
+              </li>
+              <li className="mostlistened-container-list link">
+                <span className="mostlistened__mostlistened__number">02</span>
+                <span className="mostlistened__play play"></span>
+                <span className="mostlistened__radio-name">Radio one</span>
+                <span className="mostlistened__country">Russian</span>
+                <span className="mostlistened__rate">12 kbps</span>
+              </li>
+              <li className="mostlistened-container-list link">
+                <span className="mostlistened__number">03</span>
+                <span className="mostlistened__play play"></span>
+                <span className="mostlistened__radio-name">Radio one</span>
+                <span className="mostlistened__country">Russian</span>
+                <span className="mostlistened__rate">12 kbps</span>
+              </li>
+              <li className="mostlistened-container-list link">
+                <span className="mostlistened__number">04</span>
+                <span className="mostlistened__play play"></span>
+                <span className="mostlistened__radio-name">Radio one</span>
+                <span className="mostlistened__country">Russian</span>
+                <span className="mostlistened__rate">12 kbps</span>
+              </li>
+              <div className="row">
+                <li className="mostlistened-container-list link">
+                  <span className="mostlistened__number">04</span>
+                  <span className="mostlistened__play play"></span>
+                  <span className="mostlistened__radio-name">Radio one</span>
+                  <span className="mostlistened__country">Russian</span>
+                  <span className="mostlistened__rate">12 kbps</span>
+                </li>
+                <div className="mostlistened__line d-center row">→</div>
+              </div>
+            </ul>
           </div>
         </div>
         <div className="col hero hero-intro">
@@ -27,7 +67,7 @@ const Home = () => (
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="btn btn-raised hero-btn">Discover</button>
+          <button className="btn btn-hero hero-btn">Discover</button>
         </div>
       </div>
     </div>

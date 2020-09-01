@@ -14,3 +14,11 @@
 .inline {
   display: inline-block;
 }
+
+.block {
+  display: block;
+}
+
+.link {
+  cursor: pointer;
+}

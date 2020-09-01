@@ -9,12 +9,12 @@
   box-shadow: 0 0 0 1px var(--darkAccent);
 }
 
-.btn-raised {
-  border: 1px solid var(--darkAccent);
+.btn-hero {
+  border: 1px solid var(--accent);
   border-radius: 0.4em;
-  background-color: var(--darkAccent);
+  background-color: var(--accent);
   color: var(--lightAccent);
   font-size: 1.4rem;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px var(--darkAccent));
   font-family: oswald;
 }

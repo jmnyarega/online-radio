@@ -1,0 +1,6 @@
+.play {
+  border-left: 0.6em solid transparent;
+  border-right: 0.6em solid transparent;
+  border-bottom: 1em solid var(--darkAccent);
+  transform: rotate(90deg);
+}
