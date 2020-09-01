@@ -6,7 +6,7 @@
 
 .btn:hover {
   cursor: pointer;
-  box-shadow: 0 0 0 1px var(--darkAccent);
+  opacity: 0.8;
 }
 
 .btn-hero {

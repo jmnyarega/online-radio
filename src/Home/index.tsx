@@ -41,7 +41,7 @@ const Home = () => (
                 <span className="mostlistened__country">Russian</span>
                 <span className="mostlistened__rate">12 kbps</span>
               </li>
-              <div className="row">
+              <div className="row mostlistened-row__line">
                 <li className="mostlistened-container-list link">
                   <span className="mostlistened__number">04</span>
                   <span className="mostlistened__play play"></span>

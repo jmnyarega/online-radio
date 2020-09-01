@@ -51,7 +51,7 @@
 }
 
 .mostlistened-container-list:hover {
-  filter: drop-shadow(0px 1px 1px var(--darkAccent));
+  opacity: 0.8;
 }
 
 .mostlistened__play {
@@ -70,10 +70,17 @@
   color: var(--gray);
 }
 
+.mostlistened-row__line {
+  position: relative;
+}
+
 .mostlistened__line {
   color: var(--lightAccent);
-  padding-left: 0.5rem;
   font-weight: 900;
-  padding-top: 0.5em;
   cursor: pointer;
+  position: absolute;
+  bottom: 35%;
+  right: 25%;
+  height: 5px;
+  padding-left: 0.5rem;
 }
