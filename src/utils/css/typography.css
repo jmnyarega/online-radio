@@ -1,0 +1,16 @@
+.title {
+  font-family: oswald;
+  color: var(--lightAccent);
+}
+
+.title__small {
+  font-size: 1.3rem;
+}
+
+.title__large {
+  font-size: 2.8rem;
+}
+
+.inline {
+  display: inline-block;
+}

@@ -1,0 +1,10 @@
+.main__background {
+  background: url("../../assets/background.jpg") no-repeat;
+  background-color: var(--darkGray);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+
+  min-height: 100vh;
+}

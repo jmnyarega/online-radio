@@ -1,0 +1,20 @@
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0 1px var(--darkAccent);
+}
+
+.btn-raised {
+  border: 1px solid var(--darkAccent);
+  border-radius: 0.4em;
+  background-color: var(--darkAccent);
+  color: var(--lightAccent);
+  font-size: 1.4rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  font-family: oswald;
+}
