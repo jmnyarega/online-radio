@@ -69,7 +69,8 @@
   margin: 0 0 5rem;
 }
 
-.search-input::focus {
+.search-input:focus,
+.search__select-country {
   outline: none;
   box-shadow: 0 0 1px 1px transparent;
 }
