@@ -16,8 +16,10 @@
     "typescript": "~3.7.2"
   },
   "scripts": {
+    "dev": "concurrently \"yarn start\" \"yarn lint\"",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "lint": "csslint src/**/*.css",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

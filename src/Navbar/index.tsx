@@ -5,7 +5,11 @@ const NavBar = () => (
   <header className="header header__text-color">
     <div className="logo">Radio.radio</div>
     <nav className="nav">
-      <li className="nav-list">Discover</li>
+      <li className="nav-list">
+        <a href="" className="nav-list__link">
+          Discover
+        </a>
+      </li>
     </nav>
   </header>
 );

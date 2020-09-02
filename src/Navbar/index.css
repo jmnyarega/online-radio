@@ -20,3 +20,15 @@
   list-style: none;
   margin-right: 2em;
 }
+
+.nav-list__link {
+  text-decoration: none;
+  border-bottom: none;
+  color: currentColor;
+  transition: border-bottom 2s ease-in;
+}
+
+.nav-list__link:hover {
+  border-bottom: 1px solid var(--lightAccent);
+  transform-origin: left;
+}
