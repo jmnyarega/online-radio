@@ -26,44 +26,6 @@
   margin: auto;
 }
 
-.search-custom__arrow {
-  position: absolute;
-  right: calc(50% - 150px);
-  bottom: 0;
-  top: 0;
-  display: block;
-  background-color: var(--lightAccent);
-  width: 3rem;
-  pointer-events: none;
-}
-
-.search-custom__arrow::after {
-  content: "";
-  border-left: 0.7em solid transparent;
-  border-right: 0.7em solid transparent;
-  border-top: 0.7em solid var(--gray);
-  top: 70%;
-}
-
-.search-custom__arrow::before {
-  content: "";
-  border-left: 0.7em solid transparent;
-  border-right: 0.7em solid transparent;
-  border-bottom: 0.7em solid var(--gray);
-  top: 30%;
-}
-
-.search-custom__arrow::after,
-.search-custom__arrow::before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  left: 50%;
-
-  transform: translate(-50%, -50%);
-}
-
 .search-custom__select {
   position: relative;
   margin: 0 0 5rem;

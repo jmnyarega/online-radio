@@ -6,7 +6,7 @@ const NavBar = () => (
     <div className="logo">Radio.radio</div>
     <nav className="nav">
       <li className="nav-list">
-        <a href="" className="nav-list__link">
+        <a href="/discover" className="nav-list__link">
           Discover
         </a>
       </li>

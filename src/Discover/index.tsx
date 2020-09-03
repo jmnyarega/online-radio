@@ -16,7 +16,7 @@ const Home = () => (
               <option value={country.name}>{country.name}</option>
             ))}
           </select>
-          <span className="search-custom__arrow"></span>
+          <span className="search-custom__arrow arrow"></span>
         </span>
         <div className="row d-center">
           <input
