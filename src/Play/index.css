@@ -1,6 +1,6 @@
 .main-content {
   justify-content: center;
-  padding-top: 15%;
+  padding-top: 10%;
 }
 
 .player {
@@ -21,4 +21,8 @@
 
 .key {
   margin-right: 1.5rem;
+}
+
+.audio {
+  margin: 2% 0;
 }

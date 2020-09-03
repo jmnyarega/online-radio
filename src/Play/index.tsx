@@ -7,11 +7,18 @@ const Home = (props: any) => (
     <div className="main main__background">
       <div className="main-content player row">
         <div className="player-radio__image col">
-          <img
-            src="https://images.pexels.com/photos/1539/vintage-technology-music-old.jpg?cs=srgb&dl=pexels-splitshire-1539.jpg&fm=jpg"
-            alt=""
-            width="500"
-          />
+          {props.location &&
+          props.location.data &&
+          props.location.data.favicon ? (
+            <img src={props.location.data.favicon} alt="" width="500" />
+          ) : (
+            <img
+              src="https://images.pexels.com/photos/1539/vintage-technology-music-old.jpg?cs=srgb&dl=pexels-splitshire-1539.jpg&fm=jpg"
+              alt=""
+              width="300"
+              height="50%"
+            />
+          )}
         </div>
         <div className="player-radio__info col">
           <div className="player-radio__country player-item">
@@ -63,7 +70,7 @@ const Home = (props: any) => (
                 props.location.data.countrycode}
             </span>
           </div>
-          <div className="player-radio__voteso player-item">
+          <div className="player-radio__votes player-item">
             <span className="key">Votes:</span>
             <span className="value">
               {props.location &&
@@ -71,6 +78,15 @@ const Home = (props: any) => (
                 props.location.data.votes}
             </span>
           </div>
+        </div>
+      </div>
+      <div className="player-radio__audio audio row da-center">
+        <div>
+          {props.location &&
+            props.location.data &&
+            props.location.data.url_resolved && (
+              <audio src={props.location.data.url_resolved} autoPlay></audio>
+            )}
         </div>
       </div>
     </div>

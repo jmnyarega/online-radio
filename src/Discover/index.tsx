@@ -15,7 +15,10 @@ const Home = () => {
   const getCountry = (e: React.FormEvent<HTMLSelectElement>) => {
     const country = e.currentTarget.value;
     import(`../data/countries/${country}.json`)
-      .then((x) => setStationUrls(x.default))
+      .then((x) => {
+        setStationName(x.default);
+        setStationUrls(x.default);
+      })
       .catch((err) => {
         console.log("boom", err);
       });
@@ -71,6 +74,7 @@ const Home = () => {
                         pathname: "/play",
                         data: x,
                       })}
+                      className="results-text"
                     >
                       {x.name}
                     </Link>
