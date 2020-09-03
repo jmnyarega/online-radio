@@ -1,2 +1,24 @@
-* {
+.main-content {
+  justify-content: center;
+  padding-top: 15%;
+}
+
+.player {
+  justify-content: center;
+}
+
+.player-radio__image {
+  margin-right: 5rem;
+}
+
+.player-radio__info {
+  color: var(--lightAccent);
+}
+
+.player-item + .player-item {
+  margin-top: 1em;
+}
+
+.key {
+  margin-right: 1.5rem;
 }

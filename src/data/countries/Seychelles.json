@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "fb99e21f-c9c5-4d26-bdca-ffda586244c6",
+    "stationuuid": "78d3cd84-7f82-4305-8479-04275d778f86",
+    "name": "Radio Sesel",
+    "url": "http://176.31.123.49:2199/tunein/svibes.pls",
+    "url_resolved": "http://176.31.123.49:8000/stream",
+    "homepage": "http://radiosesel.com/",
+    "favicon": "",
+    "tags": "sesel,seychelles",
+    "country": "Seychelles",
+    "countrycode": "SC",
+    "state": "",
+    "language": "creole,english",
+    "votes": 4,
+    "lastchangetime": "2020-05-19 14:31:08",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 00:56:30",
+    "lastcheckoktime": "2020-09-03 00:56:30",
+    "lastlocalchecktime": "2020-09-03 00:56:30",
+    "clicktimestamp": "2020-09-02 18:13:49",
+    "clickcount": 17,
+    "clicktrend": 2
+  }
+]
+

@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "d7da8f93-c68d-11e8-a498-52543be04c81",
+    "stationuuid": "d7da8f81-c68d-11e8-a498-52543be04c81",
+    "name": "Radio Domoni Inter",
+    "url": "http://www.domoni-inter.org:8000/live",
+    "url_resolved": "http://www.domoni-inter.org:8000/live",
+    "homepage": "http://www.domoni-inter.org/",
+    "favicon": "http://www.domoni-inter.org//images/favicon.png",
+    "tags": "",
+    "country": "Comoros",
+    "countrycode": "KM",
+    "state": "",
+    "language": "",
+    "votes": 15,
+    "lastchangetime": "2020-01-23 20:40:49",
+    "codec": "MP3",
+    "bitrate": 96,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 08:12:16",
+    "lastcheckoktime": "2020-09-03 08:12:16",
+    "lastlocalchecktime": "2020-09-03 08:12:16",
+    "clicktimestamp": "2020-08-21 13:56:29",
+    "clickcount": 4,
+    "clicktrend": 0
+  }
+]
+

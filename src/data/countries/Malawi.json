@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "83baf756-5aa9-11e9-a622-52543be04c81",
+    "stationuuid": "83baf74b-5aa9-11e9-a622-52543be04c81",
+    "name": "RADIO MARIA MALAWI",
+    "url": "http://dreamsiteradiocp.com:8040/stream",
+    "url_resolved": "http://dreamsiteradiocp.com:8040/stream",
+    "homepage": "http://www.radiomaria.mw/",
+    "favicon": "http://www.radiomaria.mw/wp-content/uploads/2018/02/cropped-maryweb-270x270.jpg",
+    "tags": "talk,religion,catholic",
+    "country": "Malawi",
+    "countrycode": "MW",
+    "state": "",
+    "language": "",
+    "votes": 17,
+    "lastchangetime": "2020-01-23 20:40:50",
+    "codec": "MP3",
+    "bitrate": 32,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 07:30:29",
+    "lastcheckoktime": "2020-09-03 07:30:29",
+    "lastlocalchecktime": "2020-09-02 09:26:21",
+    "clicktimestamp": "2020-09-02 19:38:42",
+    "clickcount": 25,
+    "clicktrend": 1
+  }
+]
+

@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import NavBar from "../Navbar/index";
 import Discover from "../Discover";
 import Home from "../Home";
+import Play from "../Play";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <Switch>
         <Route path="/discover">
           <Discover />
+        </Route>
+        <Route path="/play">
+          <Play />
         </Route>
         <Route path="/">
           <Home />

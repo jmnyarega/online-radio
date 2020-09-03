@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "962eec14-0601-11e8-ae97-52543be04c81",
+    "stationuuid": "962eec0f-0601-11e8-ae97-52543be04c81",
+    "name": "KKHJ 93.1 \"93KHJ\" Pago Pago",
+    "url": "http://ice9.securenetsystems.net/KKHJ",
+    "url_resolved": "http://ice9.securenetsystems.net/KKHJ",
+    "homepage": "http://khjradio.com/",
+    "favicon": "http://www.khjradio.com/wp-content/uploads/2016/07/defaultimage.jpg",
+    "tags": "pago pago,hot adult contemporary,top 40",
+    "country": "American Samoa",
+    "countrycode": "AS",
+    "state": "",
+    "language": "english",
+    "votes": 115,
+    "lastchangetime": "2020-01-23 20:40:48",
+    "codec": "AAC",
+    "bitrate": 48,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 07:41:40",
+    "lastcheckoktime": "2020-09-03 07:41:40",
+    "lastlocalchecktime": "2020-09-02 20:18:29",
+    "clicktimestamp": "2020-09-02 22:37:56",
+    "clickcount": 46,
+    "clicktrend": 0
+  }
+]
+

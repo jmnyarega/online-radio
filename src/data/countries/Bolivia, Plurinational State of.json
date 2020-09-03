@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "b842ba82-e85f-4abb-81d1-73c6441a0577",
+    "stationuuid": "dddb3084-0f58-46b9-b859-5d9a9b241d0b",
+    "name": "Night On Radio",
+    "url": "http://stream.zeno.fm/q509gmwzqzzuv",
+    "url_resolved": "http://node-32.zeno.fm/q509gmwzqzzuv?rj-ttl=5&rj-tok=AAABdFG8cg4AG5_LdH3_dmbKSw",
+    "homepage": "https://nightonradio.wixsite.com/home",
+    "favicon": "",
+    "tags": "electronic",
+    "country": "Bolivia, Plurinational State of",
+    "countrycode": "BO",
+    "state": "",
+    "language": "",
+    "votes": 0,
+    "lastchangetime": "2020-06-15 09:26:26",
+    "codec": "MP3",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 02:08:45",
+    "lastcheckoktime": "2020-09-03 02:08:45",
+    "lastlocalchecktime": "2020-09-02 19:17:16",
+    "clicktimestamp": "2020-09-03 05:52:01",
+    "clickcount": 14,
+    "clicktrend": 2
+  }
+]
+

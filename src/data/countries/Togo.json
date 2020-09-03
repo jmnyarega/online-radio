@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "6761a2a1-5f91-11e9-a622-52543be04c81",
+    "stationuuid": "6761a296-5f91-11e9-a622-52543be04c81",
+    "name": "RADIO MARIA TOGO",
+    "url": "http://dreamsiteradiocp.com:8050/stream",
+    "url_resolved": "http://dreamsiteradiocp.com:8050/stream",
+    "homepage": "http://www.radiomaria.tg/",
+    "favicon": "http://www.radiomaria.tg/wp-content/uploads/2018/02/cropped-per-favicon-270x270.jpg",
+    "tags": "talk,religious,religion,catolica,catholic,christian",
+    "country": "Togo",
+    "countrycode": "TG",
+    "state": "",
+    "language": "",
+    "votes": 57,
+    "lastchangetime": "2020-01-23 20:40:50",
+    "codec": "MP3",
+    "bitrate": 32,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 07:19:25",
+    "lastcheckoktime": "2020-09-03 07:19:25",
+    "lastlocalchecktime": "2020-09-02 16:29:45",
+    "clicktimestamp": "2020-09-02 14:53:38",
+    "clickcount": 24,
+    "clicktrend": 2
+  }
+]
+

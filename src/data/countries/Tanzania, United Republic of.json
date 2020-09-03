@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "d354c53a-db06-11e9-a8ba-52543be04c81",
+    "stationuuid": "d354c516-db06-11e9-a8ba-52543be04c81",
+    "name": "Bongo Radio",
+    "url": "http://www.bongoradio.com/listen128k.pls",
+    "url_resolved": "http://173.244.208.77:8000/bongo.mp3",
+    "homepage": "http://www.bongoradio.com",
+    "favicon": "http://www.bongoradio.com/images/logo.png",
+    "tags": "",
+    "country": "Tanzania, United Republic of",
+    "countrycode": "TZ",
+    "state": "",
+    "language": "swahili",
+    "votes": 30,
+    "lastchangetime": "2020-01-23 20:40:50",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 08:03:40",
+    "lastcheckoktime": "2020-09-03 08:03:40",
+    "lastlocalchecktime": "2020-09-02 09:45:19",
+    "clicktimestamp": "2020-09-02 16:52:23",
+    "clickcount": 62,
+    "clicktrend": 0
+  }
+]
+

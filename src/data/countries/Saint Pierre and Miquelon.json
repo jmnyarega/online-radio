@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "b21d1e2c-8296-4f26-a7ba-90cc3886825f",
+    "stationuuid": "8286ffd7-e3fe-4255-80dc-6e67c79562bc",
+    "name": "RADIO ATLANTIQUE",
+    "url": "https://s7.voscast.com:10433/stream.mp3",
+    "url_resolved": "https://s7.voscast.com:10433/stream.mp3",
+    "homepage": "https://www.radioatlantique.com",
+    "favicon": "",
+    "tags": "",
+    "country": "Saint Pierre and Miquelon",
+    "countrycode": "PM",
+    "state": "",
+    "language": "french",
+    "votes": 1,
+    "lastchangetime": "2020-08-14 15:48:19",
+    "codec": "MP3",
+    "bitrate": 192,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 21:35:16",
+    "lastcheckoktime": "2020-09-02 21:35:16",
+    "lastlocalchecktime": "2020-09-02 19:46:57",
+    "clicktimestamp": "2020-09-03 05:16:11",
+    "clickcount": 12,
+    "clicktrend": 1
+  }
+]
+

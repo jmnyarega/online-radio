@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "963c38d7-0601-11e8-ae97-52543be04c81",
+    "stationuuid": "963c38d2-0601-11e8-ae97-52543be04c81",
+    "name": "AFN 360 Bahrain",
+    "url": "http://playerservices.streamtheworld.com/m3u/AFNE_BHN.m3u",
+    "url_resolved": "http://22323.live.streamtheworld.com/AFNE_BHN_SC",
+    "homepage": "http://www.afneurope.net/AFN-360/",
+    "favicon": "http://www.afneurope.net/portals/100/Images/Bahrain_AFN360Revamped-01.png",
+    "tags": "american forces network",
+    "country": "Bahrain",
+    "countrycode": "BH",
+    "state": "",
+    "language": "english",
+    "votes": 60,
+    "lastchangetime": "2020-01-23 20:40:49",
+    "codec": "MP3",
+    "bitrate": 96,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 07:25:13",
+    "lastcheckoktime": "2020-09-03 07:25:13",
+    "lastlocalchecktime": "2020-09-02 19:18:15",
+    "clicktimestamp": "2020-09-03 04:30:29",
+    "clickcount": 57,
+    "clicktrend": -1
+  }
+]
+

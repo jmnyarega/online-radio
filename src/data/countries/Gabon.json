@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "0d1e8312-c685-11e8-a498-52543be04c81",
+    "stationuuid": "0d1e8303-c685-11e8-a498-52543be04c81",
+    "name": "Eben Radio",
+    "url": "http://s8.voscast.com:7558/;stream.mp3",
+    "url_resolved": "http://s8.voscast.com:7558/;stream.mp3",
+    "homepage": "http://www.ebenradio.com/",
+    "favicon": "http://www.ebenradio.com//images/logo.png",
+    "tags": "",
+    "country": "Gabon",
+    "countrycode": "GA",
+    "state": "",
+    "language": "",
+    "votes": 19,
+    "lastchangetime": "2020-01-23 20:40:49",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 04:38:18",
+    "lastcheckoktime": "2020-09-03 04:38:18",
+    "lastlocalchecktime": "2020-09-02 10:21:42",
+    "clicktimestamp": "2020-08-31 05:22:58",
+    "clickcount": 11,
+    "clicktrend": 0
+  }
+]
+

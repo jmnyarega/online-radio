@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "d02dada3-69b1-4553-b645-2bc8552742f5",
+    "stationuuid": "43e2627c-7e26-4783-a942-06447a2a0847",
+    "name": "Hunter Fm",
+    "url": "https://live.hunter.fm/lofi_high",
+    "url_resolved": "https://live.hunter.fm/lofi_high",
+    "homepage": "https://hunter.fm/",
+    "favicon": "",
+    "tags": "lofi",
+    "country": "British Indian Ocean Territory",
+    "countrycode": "IO",
+    "state": "—",
+    "language": "english",
+    "votes": 1,
+    "lastchangetime": "2020-08-31 10:38:58",
+    "codec": "MP3",
+    "bitrate": 192,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 10:48:40",
+    "lastcheckoktime": "2020-09-02 10:48:40",
+    "lastlocalchecktime": "2020-09-02 10:39:53",
+    "clicktimestamp": "2020-09-02 14:22:56",
+    "clickcount": 5,
+    "clicktrend": 0
+  }
+]
+

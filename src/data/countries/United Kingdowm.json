@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "9b9582ca-3037-401e-9911-e034ee8f1761",
+    "stationuuid": "eef63c66-c8ce-4772-b951-16f9397608d3",
+    "name": "Southside Radio",
+    "url": "https://node-18.zeno.fm/bqaad0bkp2zuv?rj-ttl=5&rj-tok=AAABcviADbMAYQsOCanZE2V4Uw",
+    "url_resolved": "http://node-35.zeno.fm/bqaad0bkp2zuv?rj-ttl=5&rj-tok=AAABdFMG-FgAtRcAJS5UYNh6ew",
+    "homepage": "https://zeno.fm/southside-radio/",
+    "favicon": "https://proxy.zeno.fm/content/stations/agxzfnplbm8tc3RhdHNyMgsSCkF1dGhDbGllbnQYgIDg07br2ggMCxIOU3RhdGlvblByb2ZpbGUYgICQucn4sgkMogEEemVubw/image/?resize=380x380",
+    "tags": "",
+    "country": "United Kingdowm",
+    "countrycode": "",
+    "state": "",
+    "language": "english",
+    "votes": 0,
+    "lastchangetime": "2020-06-28 15:43:59",
+    "codec": "MP3",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 08:08:51",
+    "lastcheckoktime": "2020-09-03 08:08:51",
+    "lastlocalchecktime": "2020-09-03 02:03:36",
+    "clicktimestamp": "2020-08-27 22:19:58",
+    "clickcount": 2,
+    "clicktrend": 0
+  }
+]
+

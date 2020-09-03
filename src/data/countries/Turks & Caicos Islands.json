@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "962bf816-0601-11e8-ae97-52543be04c81",
+    "stationuuid": "962bf813-0601-11e8-ae97-52543be04c81",
+    "name": "88 JAMZ -88.7 Kew",
+    "url": "http://198.143.144.226:8057/stream",
+    "url_resolved": "http://198.143.144.226:8057/stream",
+    "homepage": "http://www.88jamz.com/",
+    "favicon": "http://www.88jamz.com/uploads/2/7/8/1/27815455/1454604508.png",
+    "tags": "kew,pop,top 40",
+    "country": "Turks & Caicos Islands",
+    "countrycode": "TC",
+    "state": "",
+    "language": "english",
+    "votes": 21,
+    "lastchangetime": "2020-01-23 20:40:48",
+    "codec": "MP3",
+    "bitrate": 192,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 04:21:48",
+    "lastcheckoktime": "2020-09-03 04:21:48",
+    "lastlocalchecktime": "2020-09-02 21:16:48",
+    "clicktimestamp": "2020-08-30 07:13:10",
+    "clickcount": 14,
+    "clicktrend": 0
+  }
+]
+

@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "219eaf0d-9662-48af-818c-5d1afde6799d",
+    "stationuuid": "f6cdecb7-0425-44f5-95a5-30294c6fc4a1",
+    "name": "TRA",
+    "url": "http://transamerica.crossradio.com.br:9114/live.mp3",
+    "url_resolved": "http://transamerica.crossradio.com.br:9114/live.mp3",
+    "homepage": "http://transamerica.crossradio.com.br:9114/live.mp3",
+    "favicon": "http://transamerica.crossradio.com.br:9114/live.mp3",
+    "tags": "",
+    "country": "Transamerica",
+    "countrycode": "",
+    "state": "",
+    "language": "pop",
+    "votes": 0,
+    "lastchangetime": "2020-07-22 16:05:52",
+    "codec": "MP3",
+    "bitrate": 64,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 04:43:55",
+    "lastcheckoktime": "2020-09-03 04:43:55",
+    "lastlocalchecktime": "2020-09-03 02:31:21",
+    "clicktimestamp": "2020-09-02 23:40:56",
+    "clickcount": 7,
+    "clicktrend": 1
+  }
+]
+

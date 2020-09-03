@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "9640c5ed-0601-11e8-ae97-52543be04c81",
+    "stationuuid": "9640c5e8-0601-11e8-ae97-52543be04c81",
+    "name": "Gainako Radio",
+    "url": "http://ample-05.radiojar.com/aushpszb52vtv",
+    "url_resolved": "http://n03.radiojar.com/aushpszb52vtv?rj-ttl=5&rj-tok=AAABdFKSB8EAE7g0DMlneHoH0Q",
+    "homepage": "http://gainako.com/",
+    "favicon": "http://gainako.com/wp-content/uploads/2016/01/cropped-GainakoLogo-300x300.png",
+    "tags": "talk radio,news,information",
+    "country": "Gambia",
+    "countrycode": "GM",
+    "state": "",
+    "language": "english",
+    "votes": 45,
+    "lastchangetime": "2020-01-23 20:40:49",
+    "codec": "MP3",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 06:03:31",
+    "lastcheckoktime": "2020-09-03 06:03:31",
+    "lastlocalchecktime": "2020-09-02 17:49:58",
+    "clicktimestamp": "2020-09-02 15:00:06",
+    "clickcount": 40,
+    "clicktrend": 2
+  }
+]
+

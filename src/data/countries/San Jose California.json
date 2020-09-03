@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "5002ed51-b270-434f-950a-3acee1cb4484",
+    "stationuuid": "ccf173b6-5a16-49c5-99c2-8900699c5be4",
+    "name": "Air1",
+    "url": "https://emf.streamguys1.com/secure/sa005_aac_high_web",
+    "url_resolved": "",
+    "homepage": "https://listen.air1.com/",
+    "favicon": "https://emfservices.azureedge.net/www/air1-logo-no-text.jpg",
+    "tags": "",
+    "country": "San Jose California",
+    "countrycode": "",
+    "state": "",
+    "language": "english",
+    "votes": 0,
+    "lastchangetime": "2020-09-01 21:30:40",
+    "codec": "",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 0,
+    "lastchecktime": "2020-09-02 21:56:55",
+    "lastcheckoktime": "",
+    "lastlocalchecktime": "2020-09-02 21:52:33",
+    "clicktimestamp": "2020-09-01 21:32:57",
+    "clickcount": 1,
+    "clicktrend": -1
+  }
+]
+

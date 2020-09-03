@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "4719f049-3c0b-4012-83af-8ffed786a127",
+    "stationuuid": "fd6000da-023a-4501-abfe-c9e80ac7089c",
+    "name": "Radio 1",
+    "url": "http://stream.radioreklama.bg/radio1128",
+    "url_resolved": "http://stream.radioreklama.bg/radio1128",
+    "homepage": "https://www.radio1.bg/",
+    "favicon": "http://onlineradiobg.com/wp-content/uploads/2015/09/radio-1.jpg",
+    "tags": "",
+    "country": "BG",
+    "countrycode": "",
+    "state": "",
+    "language": "bulgarian",
+    "votes": 0,
+    "lastchangetime": "2020-08-16 07:27:03",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 10:05:21",
+    "lastcheckoktime": "2020-09-02 10:05:21",
+    "lastlocalchecktime": "2020-09-02 09:41:35",
+    "clicktimestamp": "2020-08-22 13:44:01",
+    "clickcount": 5,
+    "clicktrend": 0
+  }
+]
+

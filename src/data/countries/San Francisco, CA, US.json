@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "dd77abc4-b146-40f4-88cb-a233d8bd3b3c",
+    "stationuuid": "fa31d746-7b86-4537-9f16-f0461a66e60e",
+    "name": "WiLD 94.9 (KYLD)",
+    "url": "http://stream.revma.ihrhls.com/zc305",
+    "url_resolved": "http://n23b-e2.revma.ihrhls.com/zc305?rj-ttl=5&rj-tok=AAABdFIlMh4AVrIrRzLs2d--TA",
+    "homepage": "https://wild949.iheart.com/",
+    "favicon": "https://i.iheart.com/v3/re/assets.brands/5e0a3df06f30114a05e027a2?ops=gravity(%22center%22),contain(740,416),quality(65)",
+    "tags": "",
+    "country": "San Francisco, CA, US",
+    "countrycode": "",
+    "state": "",
+    "language": "english",
+    "votes": 0,
+    "lastchangetime": "2020-08-24 20:18:58",
+    "codec": "AAC",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 03:59:55",
+    "lastcheckoktime": "2020-09-03 03:59:55",
+    "lastlocalchecktime": "2020-09-02 23:32:39",
+    "clicktimestamp": "2020-08-31 03:51:04",
+    "clickcount": 4,
+    "clicktrend": 0
+  }
+]
+

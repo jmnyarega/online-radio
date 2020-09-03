@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "29053e57-c093-451b-b3cd-4281389213bc",
+    "stationuuid": "f0488e35-543c-4922-a0ff-b258451b764c",
+    "name": "Rire et Chansons",
+    "url": "http://cdn.nrjaudio.fm/audio1/fr/30401/mp3_128.mp3?origine=fluxradios",
+    "url_resolved": "http://185.52.127.132/fr/30401/mp3_128.mp3?origine=fluxradios",
+    "homepage": "http://www.rireetchansons.fr/",
+    "favicon": "http://www.rireetchansons.fr/",
+    "tags": "",
+    "country": "NRJ France",
+    "countrycode": "",
+    "state": "",
+    "language": "français",
+    "votes": 3,
+    "lastchangetime": "2020-06-18 09:05:53",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 06:19:47",
+    "lastcheckoktime": "2020-09-03 06:19:47",
+    "lastlocalchecktime": "2020-09-03 06:00:37",
+    "clicktimestamp": "2020-08-24 21:30:55",
+    "clickcount": 5,
+    "clicktrend": 0
+  }
+]
+

@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "1a480829-2569-4d2e-83e1-b3f08e3bc878",
+    "stationuuid": "692d7e03-b9e0-4106-8edd-19820498302b",
+    "name": "Eska Warszawa",
+    "url": "http://waw01-02.ic.smcdn.pl:8000/t042-1.mp3",
+    "url_resolved": "http://waw01-02.ic.smcdn.pl:8000/t042-1.mp3",
+    "homepage": "http://waw01-02.ic.smcdn.pl:8000/t042-1.mp3",
+    "favicon": "http://waw01-02.ic.smcdn.pl:8000/t042-1.mp3",
+    "tags": "",
+    "country": "Warsaw",
+    "countrycode": "",
+    "state": "",
+    "language": "polish",
+    "votes": 0,
+    "lastchangetime": "2020-07-07 15:48:21",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 02:47:46",
+    "lastcheckoktime": "2020-09-03 02:47:46",
+    "lastlocalchecktime": "2020-09-02 19:38:56",
+    "clicktimestamp": "2020-08-21 14:55:46",
+    "clickcount": 3,
+    "clicktrend": 0
+  }
+]
+

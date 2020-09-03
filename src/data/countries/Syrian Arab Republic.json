@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "64c687a8-3645-11ea-8dd7-52543be04c81",
+    "stationuuid": "64c6879d-3645-11ea-8dd7-52543be04c81",
+    "name": "sham fm",
+    "url": "http://radioshamfm.grtvstream.com:2199/tunein/shamfm.pls",
+    "url_resolved": "http://5.39.218.151:8400/stream",
+    "homepage": "http://sham.fm/ar/index.html",
+    "favicon": "http://sham.fm//assets/v3/images/image_src.png",
+    "tags": "",
+    "country": "Syrian Arab Republic",
+    "countrycode": "SY",
+    "state": "",
+    "language": "arabic",
+    "votes": 41,
+    "lastchangetime": "2020-01-23 20:40:50",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 21:08:13",
+    "lastcheckoktime": "2020-09-02 21:08:13",
+    "lastlocalchecktime": "2020-09-02 15:32:54",
+    "clicktimestamp": "2020-09-03 04:08:46",
+    "clickcount": 75,
+    "clicktrend": 0
+  }
+]
+

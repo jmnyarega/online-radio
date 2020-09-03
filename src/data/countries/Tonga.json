@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "9634dbb6-0601-11e8-ae97-52543be04c81",
+    "stationuuid": "9634dbb2-0601-11e8-ae97-52543be04c81",
+    "name": "Radio Tonga 101.7 Nuku'alofa",
+    "url": "http://tbcletio.serverroom.us:8142/;stream.mp3",
+    "url_resolved": "http://tbcletio.serverroom.us:8142/;stream.mp3",
+    "homepage": "http://www.tonga-broadcasting.net/?page_id=35",
+    "favicon": "http://www.tonga-broadcasting.net/wp-content/uploads/2016/01/logo.jpg",
+    "tags": "nuku'alofa,local information,local news,public radio",
+    "country": "Tonga",
+    "countrycode": "TO",
+    "state": "",
+    "language": "tongan",
+    "votes": 34,
+    "lastchangetime": "2020-01-23 20:40:48",
+    "codec": "MP3",
+    "bitrate": 32,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 00:32:09",
+    "lastcheckoktime": "2020-09-03 00:32:09",
+    "lastlocalchecktime": "2020-09-03 00:32:09",
+    "clicktimestamp": "2020-08-30 08:45:23",
+    "clickcount": 19,
+    "clicktrend": 0
+  }
+]
+

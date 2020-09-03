@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "7f2c394b-71ba-4126-b100-ffd1a3207b77",
+    "stationuuid": "b5a16151-8ede-4de9-a77b-45cef8361c99",
+    "name": "KEC49 Monterey, CA - NOAA Weather Radio",
+    "url": "https://video1.getstreamhosting.com:8746/KEC49.mp3",
+    "url_resolved": "https://video1.getstreamhosting.com:8746/KEC49.mp3",
+    "homepage": "http://saratoga-weather.org/index.php",
+    "favicon": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Noaa_all_hazards.svg/200px-Noaa_all_hazards.svg.png",
+    "tags": "",
+    "country": "Monterey, CA",
+    "countrycode": "",
+    "state": "",
+    "language": "english",
+    "votes": 0,
+    "lastchangetime": "2020-08-24 16:40:55",
+    "codec": "MP3",
+    "bitrate": 32,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 21:30:01",
+    "lastcheckoktime": "2020-09-02 21:30:01",
+    "lastlocalchecktime": "2020-09-02 18:45:32",
+    "clicktimestamp": "2020-08-27 16:14:23",
+    "clickcount": 3,
+    "clicktrend": 0
+  }
+]
+

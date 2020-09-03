@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "d2809b56-caec-4110-8815-1ee10d4d2bf1",
+    "stationuuid": "f564b34c-6e5f-41db-9eee-021b8fe80c01",
+    "name": "Radio ",
+    "url": "http://node-32.zeno.fm/zrsfcx3351zuv.aac?rj-ttl=5&rj-tok=AAABczVsAPsAAt71uG4TMqrjoQ",
+    "url_resolved": "http://node-19.zeno.fm/zrsfcx3351zuv.aac?rj-ttl=5&rj-tok=AAABdFEIaXgAxdaguSFzvhUxuA",
+    "homepage": "Radio ",
+    "favicon": "",
+    "tags": "international",
+    "country": "Venezuela, Bolivarian Republic of",
+    "countrycode": "VE",
+    "state": "",
+    "language": "",
+    "votes": 1,
+    "lastchangetime": "2020-08-23 13:47:35",
+    "codec": "AAC",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 22:51:28",
+    "lastcheckoktime": "2020-09-02 22:51:28",
+    "lastlocalchecktime": "2020-09-02 21:34:04",
+    "clicktimestamp": "2020-09-02 14:13:16",
+    "clickcount": 17,
+    "clicktrend": -2
+  }
+]
+

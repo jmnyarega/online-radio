@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "ca01b6f8-5979-11ea-be63-52543be04c81",
+    "stationuuid": "ca01b6e7-5979-11ea-be63-52543be04c81",
+    "name": "Radio classica bresciana",
+    "url": "https://ice15.fluidstream.net/classicabresciana.aac",
+    "url_resolved": "https://ice15.fluidstream.net/classicabresciana.aac",
+    "homepage": "http://servizi.bresciaonline.it/radioclassica/popup_radioclassica.html",
+    "favicon": "https://www.radiobresciasette.it/",
+    "tags": "",
+    "country": "Ialia",
+    "countrycode": "",
+    "state": "Lombardia",
+    "language": "italiano",
+    "votes": 1,
+    "lastchangetime": "2020-02-27 15:59:40",
+    "codec": "AAC",
+    "bitrate": 64,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-02 21:35:49",
+    "lastcheckoktime": "2020-09-02 21:35:49",
+    "lastlocalchecktime": "2020-09-02 21:35:49",
+    "clicktimestamp": "2020-08-24 14:43:39",
+    "clickcount": 3,
+    "clicktrend": 0
+  }
+]
+

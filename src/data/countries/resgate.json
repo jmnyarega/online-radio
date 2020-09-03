@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "071772d7-d8ec-447a-ad73-4fb25c390139",
+    "stationuuid": "42716596-545a-4caa-9a7e-d1d765c665ed",
+    "name": "resgate",
+    "url": "http://69.197.184.178:7072/;",
+    "url_resolved": "http://69.197.184.178:7072/;",
+    "homepage": "http://69.197.184.178:7072/;",
+    "favicon": "http://69.197.184.178:7072/;",
+    "tags": "",
+    "country": "resgate",
+    "countrycode": "",
+    "state": "",
+    "language": "br",
+    "votes": 0,
+    "lastchangetime": "2020-07-22 17:10:15",
+    "codec": "AAC",
+    "bitrate": 64,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 04:58:22",
+    "lastcheckoktime": "2020-09-03 04:58:22",
+    "lastlocalchecktime": "2020-09-02 19:41:41",
+    "clicktimestamp": "2020-09-03 00:40:57",
+    "clickcount": 5,
+    "clicktrend": 1
+  }
+]
+

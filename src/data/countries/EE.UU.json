@@ -1,0 +1,29 @@
+[
+  {
+    "changeuuid": "c65e6390-9e79-46e7-bef1-c8e0b2e81b08",
+    "stationuuid": "1425a0ad-ac65-420d-9e3a-114ddc8872df",
+    "name": "107.9 MIX FM",
+    "url": "https://www.radio.es/s/mix1079tx",
+    "url_resolved": "",
+    "homepage": "https://mix1079.net/",
+    "favicon": "https://static.radio.es/images/broadcasts/ba/0c/17662/c175.png",
+    "tags": "",
+    "country": "EE.UU",
+    "countrycode": "",
+    "state": "",
+    "language": "english",
+    "votes": 0,
+    "lastchangetime": "2020-09-02 19:13:28",
+    "codec": "",
+    "bitrate": 0,
+    "hls": 0,
+    "lastcheckok": 0,
+    "lastchecktime": "2020-09-02 19:30:13",
+    "lastcheckoktime": "",
+    "lastlocalchecktime": "2020-09-02 19:22:51",
+    "clicktimestamp": "2020-09-02 19:14:57",
+    "clickcount": 1,
+    "clicktrend": 1
+  }
+]
+
