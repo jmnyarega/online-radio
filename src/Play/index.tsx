@@ -4,8 +4,6 @@ import "./index.css";
 
 const Home = (props: any) => (
   <div className="container">
-    {/* create local storage to persist data on reload */}
-    {console.log(props.location.data)}
     <div className="main main__background">
       <div className="main-content player row">
         <div className="player-radio__image col">
