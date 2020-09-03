@@ -18,7 +18,7 @@ const Home = () => (
           </select>
           <span className="search-custom__arrow arrow"></span>
         </span>
-        <div className="row d-center">
+        <div className="row da-center">
           <input
             type="text"
             name=""
