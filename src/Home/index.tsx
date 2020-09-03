@@ -8,7 +8,7 @@ const Home = () => (
     <div className="main main__background">
       <div className="row main-content">
         <div className="col hero-toplist">
-          <div className="row d-center">
+          <div className="row dv-center">
             <Disc className="col" />
             <h4 className="title title__small col">Most listened Stations</h4>
           </div>
