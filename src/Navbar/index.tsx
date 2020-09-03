@@ -1,14 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./index.css";
 
 const NavBar = () => (
   <header className="header header__text-color">
-    <div className="logo">Radio.radio</div>
+    <div className="logo">
+      <Link to="/" className="nav-list__link">
+        Radio.radio
+      </Link>
+    </div>
     <nav className="nav">
       <li className="nav-list">
-        <a href="/discover" className="nav-list__link">
+        <Link to="/discover" className="nav-list__link">
           Discover
-        </a>
+        </Link>
       </li>
     </nav>
   </header>

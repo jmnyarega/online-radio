@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Disc from "../Common/disc";
 import "./index.css";
 
@@ -49,7 +50,12 @@ const Home = () => (
                   <span className="mostlistened__country">Russian</span>
                   <span className="mostlistened__rate">12 kbps</span>
                 </li>
-                <div className="mostlistened__line d-center row">→</div>
+                <Link
+                  to="/discover"
+                  className="mostlistened__line d-center row"
+                >
+                  →
+                </Link>
               </div>
             </ul>
           </div>
@@ -67,7 +73,9 @@ const Home = () => (
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <button className="btn btn-hero hero-btn">Discover</button>
+          <Link to="/discover" className="btn btn-hero hero-btn">
+            Discover
+          </Link>
         </div>
       </div>
     </div>

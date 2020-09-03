@@ -29,12 +29,12 @@
 .nav-list__link::after {
   content: "";
   display: block;
-  width: 0;
+  max-width: 0;
   height: 2px;
   background-color: var(--lightAccent);
-  transition: width 300ms ease;
+  transition: max-width 300ms ease;
 }
 
 .nav-list__link:hover::after {
-  width: 100%;
+  max-width: 80px;
 }

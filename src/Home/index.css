@@ -77,6 +77,7 @@
 .mostlistened__line {
   color: var(--lightAccent);
   font-weight: 900;
+  text-decoration: none;
   cursor: pointer;
   position: absolute;
   bottom: 35%;
