@@ -24,5 +24,12 @@
 }
 
 .audio {
-  margin: 2% 0;
+  width: 100%;
+  background-color: var(--darkGray);
+  padding: 1rem;
+  border-radius: 0.9em;
+}
+
+.player-audio__container {
+  margin-top: 20px;
 }
