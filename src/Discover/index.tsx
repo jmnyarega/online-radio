@@ -27,9 +27,10 @@ const Home = () => {
   const search = (e: React.FormEvent<HTMLInputElement>) => {
     const term = e.currentTarget.value;
     let results: any = [];
-    stationUrls.forEach((x: Iurl) => {
-      x.name.toLowerCase().includes(term.toLowerCase()) && results.push(x);
-    });
+    stationUrls.forEach(
+      (x: Iurl) =>
+        x.name.toLowerCase().includes(term.toLowerCase()) && results.push(x)
+    );
     setStationName(results);
   };
   return (
@@ -42,13 +43,16 @@ const Home = () => {
               onChange={getCountry}
             >
               <option value="">---Select Country---</option>
-              {countries.slice(3).map((country, i) => {
-                return (
-                  <option key={i} value={country.name}>
-                    {country.name}
-                  </option>
-                );
-              })}
+              {countries
+                .slice(3)
+                .filter((x) => !x.name.startsWith("http"))
+                .map((country, i) => {
+                  return (
+                    <option key={i} value={country.name}>
+                      {country.name}
+                    </option>
+                  );
+                })}
             </select>
             <span className="search-custom__arrow arrow"></span>
           </span>
