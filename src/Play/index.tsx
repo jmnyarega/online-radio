@@ -7,16 +7,19 @@ type Iprops = {
 };
 
 const Play = ({ location }: Iprops) => {
-  if (location && location.data && location.data.url_resolved) {
+  let currentStation = location && location.data;
+  currentStation &&
+    localStorage.setItem("playing", JSON.stringify(currentStation));
+  if (!location.data && localStorage.getItem("playing") !== "undefined") {
+    currentStation = JSON.parse(localStorage.getItem("playing") || "{}");
   }
-
   return (
     <div className="container">
       <div className="main main__background">
         <div className="main-content player row d-center">
           <div className="player-radio__image col">
-            {location && location.data && location.data.favicon ? (
-              <img src={location.data.favicon} alt="" width="300" />
+            {currentStation && currentStation.favicon ? (
+              <img src={currentStation.favicon} alt="" width="300" />
             ) : (
               <img
                 src="https://images.pexels.com/photos/1539/vintage-technology-music-old.jpg?cs=srgb&dl=pexels-splitshire-1539.jpg&fm=jpg"
@@ -29,48 +32,48 @@ const Play = ({ location }: Iprops) => {
             <div className="player-radio__country player-item">
               <span className="key">Name:</span>
               <span className="value">
-                {location && location.data && location.data.name}
+                {currentStation && currentStation.name}
               </span>
             </div>
             <div className="player-radio__country player-item">
               <span className="key">Country:</span>
               <span className="value">
-                {location && location.data && location.data.country}
+                {currentStation && currentStation.country}
               </span>
             </div>
             <div className="player-radio__language player-item">
               <span className="key">Language:</span>
               <span className="value">
-                {location && location.data && location.data.language}
+                {currentStation && currentStation.language}
               </span>
             </div>
             <div className="player-radio__website player-item">
               <span className="key">Website:</span>
               <span className="value">
-                {location && location.data && location.data.homepage}
+                {currentStation && currentStation.homepage}
               </span>
             </div>
             <div className="player-radio__tags player-item">
               <span className="key">Tags:</span>
               <span className="value">
-                {location && location.data && location.data.tags}
+                {currentStation && currentStation.tags}
               </span>
             </div>
             <div className="player-radio__country-code player-item">
               <span className="key">Country Code:</span>
               <span className="value">
-                {location && location.data && location.data.countrycode}
+                {currentStation && currentStation.countrycode}
               </span>
             </div>
             <div className="player-radio__votes player-item">
               <span className="key">Votes:</span>
               <span className="value">
-                {location && location.data && location.data.votes}
+                {currentStation && currentStation.votes}
               </span>
             </div>
           </div>
         </div>
-        {location && location.data && location.data.url_resolved && (
+        {currentStation && currentStation.url_resolved && (
           <figure className="player-audio__container ">
             <audio
               autoPlay
@@ -84,7 +87,7 @@ const Play = ({ location }: Iprops) => {
                 console.log("error...");
               }}
               controls
-              src={location.data.url_resolved}
+              src={currentStation.url_resolved}
               className="audio"
             >
               Your browser does not support the
