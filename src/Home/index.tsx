@@ -15,7 +15,7 @@ const Home = () => (
           <p className="hero-text hero-text__intro">
             The easiest way to understand the culture of a country is to listen
             to their most popular radio station. There is a lot of information
-            that is being shared on radio, news, music, way of living, politics,
+            that is being shared on radio; news, music, way of living, politics,
             etc. Radio.radio is allowing you to experience and understand
             different cultures
             <span role="img" aria-label="img">
