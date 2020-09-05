@@ -42,18 +42,34 @@ const Home = () => (
                       data: x,
                     })}
                     className="mostlistened-container-list link"
+                    key={i}
                   >
-                    <span className="mostlistened__number mostlistened__item">
+                    <span
+                      key={i + 1}
+                      className="mostlistened__number mostlistened__item"
+                    >
                       {i + 1}
                     </span>
-                    <span className="mostlistened__play play mostlistened__item"></span>
-                    <span className="mostlistened__radio-name mostlistened__item">
+                    <span
+                      key={i + 2}
+                      className="mostlistened__play play mostlistened__item"
+                    ></span>
+                    <span
+                      key={i + 3}
+                      className="mostlistened__radio-name mostlistened__item"
+                    >
                       {x.name}
                     </span>
-                    <span className="mostlistened__country mostlistened__item">
+                    <span
+                      key={i + 4}
+                      className="mostlistened__country mostlistened__item"
+                    >
                       {x.country}
                     </span>
-                    <span className="mostlistened__rate mostlistened__item">
+                    <span
+                      key={i + 5}
+                      className="mostlistened__rate mostlistened__item"
+                    >
                       {x.bitrate}kbps
                     </span>
                   </Link>

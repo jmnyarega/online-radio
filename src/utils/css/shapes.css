@@ -5,6 +5,15 @@
   transform: rotate(90deg);
 }
 
+.playing {
+  width: 1.5rem;
+  height: 2rem;
+  border: 0.5rem solid var(--darkAccent);
+  border-radius: 0.1rem;
+  border-top: none;
+  border-bottom: none;
+}
+
 .arrow {
   position: absolute;
   right: calc(50% - 150px);

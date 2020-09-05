@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { withRouter } from "react-router";
 import "./index.css";
 
@@ -8,11 +8,44 @@ type Iprops = {
 
 const Play = ({ location }: Iprops) => {
   let currentStation = location && location.data;
+
+  const [play, setPlay] = useState("");
   currentStation &&
     localStorage.setItem("playing", JSON.stringify(currentStation));
   if (!location.data && localStorage.getItem("playing") !== "undefined") {
     currentStation = JSON.parse(localStorage.getItem("playing") || "{}");
   }
+
+  const customAudio = () => {
+    const ctx = document.getElementsByClassName("player-audio")[0];
+    //@ts-ignore
+    if (ctx.paused) {
+      //@ts-ignore
+      ctx.play();
+      setPlay("playing");
+    } else {
+      //@ts-ignore
+      ctx.pause();
+      setPlay("paused");
+    }
+  };
+
+  const onError = () => {
+    alert("Playback error");
+  };
+
+  const onPlaying = () => {
+    console.log("Playing");
+  };
+
+  const onEnded = () => {
+    console.log("Ended");
+  };
+
+  const onLoad = () => {
+    console.log("On Load");
+  };
+
   return (
     <div className="container">
       <div className="main main__background">
@@ -74,26 +107,18 @@ const Play = ({ location }: Iprops) => {
           </div>
         </div>
         {currentStation && currentStation.url_resolved && (
-          <figure className="player-audio__container ">
+          <div className="player-audio__custom" onClick={customAudio}>
             <audio
-              autoPlay
-              onPlaying={() => {
-                console.log("playing");
-              }}
-              onPause={() => {
-                console.log("paused");
-              }}
-              onError={() => {
-                console.log("error...");
-              }}
-              controls
-              src={currentStation.url_resolved}
-              className="audio"
-            >
-              Your browser does not support the
-              <code>audio</code> element.
-            </audio>
-          </figure>
+              title={currentStation.name}
+              onError={onError}
+              onEnded={onEnded}
+              onPlaying={onPlaying}
+              onLoad={onLoad}
+              className="player-audio"
+              src={currentStation && currentStation.url_resolved}
+            />
+            <div className={play || "paused"}></div>
+          </div>
         )}
       </div>
     </div>
