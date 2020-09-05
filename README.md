@@ -14,7 +14,7 @@
 - The _npm_start_ command with open the application on your default browser using [this](http://localhost:3000) url
 
 ### Running the application using online link
-- I have hosted this application on netlify, [here](https://determined-hugle-bfd7e2.netlify.app/play) is the link
+- I have hosted this application on netlify, [here](https://determined-hugle-bfd7e2.netlify.app) is the link
 
 ### Design Iterations
 - Iteration 1 [here](https://www.figma.com/proto/sanL6tHhxuE5dbhjdxpW0D/Radio?node-id=1%3A2&scaling=scale-down)
