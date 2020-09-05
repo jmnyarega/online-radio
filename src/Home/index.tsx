@@ -10,16 +10,17 @@ const Home = () => (
       <div className="main-content">
         <div className="col hero hero-intro">
           <h3 className="title title__large hero-text hero-text__title">
-            The standard Lorem Ipsum passage, used since the 1500s
+            Listen to a variety of radio stations all over the world
           </h3>
           <p className="hero-text hero-text__intro">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            The easiest way to understand the culture of a country is to listen
+            to their most popular radio station. There is a lot of information
+            that is being shared on radio, news, music, way of living, politics,
+            etc. Radio.radio is giving you an opportunity to experience and
+            understand different cultures
+            <span role="img" aria-label="img">
+              🍿
+            </span>
           </p>
           <Link to="/discover" className="btn btn-hero hero-btn">
             Discover
