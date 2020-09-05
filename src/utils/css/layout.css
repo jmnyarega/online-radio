@@ -14,3 +14,7 @@
 .dv-center {
   align-items: center;
 }
+
+.d-column {
+  flex-direction: column;
+}

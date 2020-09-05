@@ -2,20 +2,16 @@
   padding: 10% 2em 0 2em;
 }
 
-.hero-toplist {
-  flex: 1;
-}
-
 .hero-intro {
-  flex: 1;
+  margin-bottom: 8rem;
 }
 
 .hero__title {
-  text-align: right;
+  text-align: center;
 }
 
 .hero-text {
-  text-align: right;
+  text-align: center;
   color: var(--lightAccent);
 }
 
@@ -36,10 +32,9 @@
 }
 
 .mostlistened-container-list {
-  font-size: 1rem;
+  font-size: 0.7rem;
   list-style: none;
   height: 50px;
-  width: 70%;
   background-color: var(--lightAccent);
   filter: drop-shadow(0px 4px 4px var(--darkAccent));
   text-decoration: none;
@@ -81,6 +76,7 @@
 
 .mostlistened-row__line {
   position: relative;
+  min-width: 300px;
 }
 
 .mostlistened__line {
@@ -93,4 +89,22 @@
   right: 25%;
   height: 5px;
   padding-left: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hero-toplist {
+    width: 45%;
+  }
+  .hero-intro {
+    width: 45%;
+    margin-bottom: 0;
+  }
+  .mostlistened-container-list {
+    font-size: 1rem;
+  }
 }

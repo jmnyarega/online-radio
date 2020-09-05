@@ -13,7 +13,7 @@ const Play = ({ location }: Iprops) => {
   return (
     <div className="container">
       <div className="main main__background">
-        <div className="main-content player row">
+        <div className="main-content player row d-center">
           <div className="player-radio__image col">
             {location && location.data && location.data.favicon ? (
               <img src={location.data.favicon} alt="" width="300" />
@@ -21,7 +21,7 @@ const Play = ({ location }: Iprops) => {
               <img
                 src="https://images.pexels.com/photos/1539/vintage-technology-music-old.jpg?cs=srgb&dl=pexels-splitshire-1539.jpg&fm=jpg"
                 alt=""
-                width="300"
+                width="200"
               />
             )}
           </div>

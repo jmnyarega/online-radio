@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <div className="container">
       <div className="main main__background">
-        <div className="main-content search">
+        <div className="main-content search d-column">
           <span className="search-custom__select row">
             <select
               className="search__select-country block"
