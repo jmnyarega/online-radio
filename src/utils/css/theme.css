@@ -29,3 +29,8 @@ body {
   max-width: 1500px;
   margin: auto;
 }
+
+.col + .col {
+  margin-left: 0;
+}
+
