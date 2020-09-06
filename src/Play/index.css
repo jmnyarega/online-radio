@@ -62,9 +62,11 @@
 
 .player-audio__custom-streamline {
   position: absolute;
-  width: 100%;
+  width: 50%;
   bottom: 38%;
   color: rgba(172, 172, 172, 0.25);
+  text-align: center;
+  margin-left: 25%;
 }
 
 @media (min-width: 900px) {
