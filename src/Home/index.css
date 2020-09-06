@@ -73,6 +73,9 @@
 .mostlistened__country {
   color: var(--gray);
   width: 5rem;
+  font-size: x-small;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .mostlistened-row__line {
