@@ -83,7 +83,12 @@ const Play = ({ location }: Iprops) => {
             <div className="player-radio__website player-item">
               <span className="key">Website:</span>
               <span className="value">
-                {currentStation && currentStation.homepage}
+                <a
+                  className="link"
+                  href={currentStation && currentStation.homepage}
+                >
+                  website
+                </a>
               </span>
             </div>
             <div className="player-radio__tags player-item">
