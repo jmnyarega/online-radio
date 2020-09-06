@@ -64,6 +64,9 @@
   font-size: 10px;
   text-transform: capitalize;
   width: 5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mostlistened__rate {
@@ -73,9 +76,9 @@
 .mostlistened__country {
   color: var(--gray);
   width: 5rem;
-  font-size: x-small;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .mostlistened-row__line {

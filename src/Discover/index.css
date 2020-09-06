@@ -8,6 +8,10 @@
   min-width: 300px;
 }
 
+.results-container {
+  width: 20vh;
+}
+
 .search-icon {
   border-bottom: 1px solid var(--lightAccent);
 }

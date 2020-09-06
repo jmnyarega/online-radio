@@ -16,6 +16,19 @@
   margin-top: 1em;
 }
 
+.player-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.value {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+  width: 50%;
+}
+
 .key {
   margin-right: 1.5rem;
 }
