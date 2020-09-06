@@ -1,11 +1,12 @@
 .favourite-list {
-  width: 40vw;
+  width: 100%;
   margin: auto;
 }
 
 .favourite-title {
   padding-top: 3rem;
   margin: 0;
+  text-align: center;
 }
 
 .favourite__no-favourites {
@@ -15,4 +16,10 @@
 
 .favourite-link {
   padding: 0 0.5em;
+}
+
+@media (min-width: 900px) {
+  .favourite-list {
+    width: 60%;
+  }
 }
