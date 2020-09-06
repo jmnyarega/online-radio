@@ -9,12 +9,19 @@ type Iprops = {
 const Play = ({ location }: Iprops) => {
   let currentStation = location && location.data;
 
-  const [play, setPlay] = useState("");
   currentStation &&
     localStorage.setItem("playing", JSON.stringify(currentStation));
   if (!location.data && localStorage.getItem("playing") !== "undefined") {
     currentStation = JSON.parse(localStorage.getItem("playing") || "{}");
   }
+
+  let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
+  const previouslyLiked = likedItems.some(
+    (x: any) => x.changeuuid === currentStation.changeuuid
+  );
+
+  const [play, setPlay] = useState("");
+  const [liked, setLiked] = useState(previouslyLiked);
 
   const customAudio = () => {
     const ctx = document.getElementsByClassName("player-audio")[0];
@@ -30,20 +37,28 @@ const Play = ({ location }: Iprops) => {
     }
   };
 
+  const like = () => {
+    if (liked) {
+      setLiked(false);
+      likedItems = likedItems.filter(
+        (x: any) => x.changeuuid !== currentStation.changeuuid
+      );
+    } else {
+      setLiked(true);
+      likedItems !== "undefined"
+        ? (likedItems = [...likedItems, currentStation])
+        : (likedItems = currentStation);
+    }
+    localStorage.setItem("liked", JSON.stringify(likedItems));
+  };
+
   const onError = () => {
     alert("Playback error");
   };
 
-  const onPlaying = () => {
-    console.log("Playing");
-  };
-
   const onEnded = () => {
+    alert("Playback ended");
     console.log("Ended");
-  };
-
-  const onLoad = () => {
-    console.log("On Load");
   };
 
   return (
@@ -109,8 +124,17 @@ const Play = ({ location }: Iprops) => {
                 {currentStation && currentStation.votes}
               </span>
             </div>
+            <div className="player-audio__actions">
+              <div
+                className={liked ? "heart" : "heart-o"}
+                role="button"
+                aria-pressed="false"
+                onClick={like}
+              ></div>
+            </div>
           </div>
         </div>
+
         {currentStation && currentStation.url_resolved && (
           <div className="player-audio__custom-container">
             <div className="player-audio__custom" onClick={customAudio}>
@@ -118,8 +142,6 @@ const Play = ({ location }: Iprops) => {
                 title={currentStation.name}
                 onError={onError}
                 onEnded={onEnded}
-                onPlaying={onPlaying}
-                onLoad={onLoad}
                 className="player-audio"
                 src={currentStation && currentStation.url_resolved}
               />

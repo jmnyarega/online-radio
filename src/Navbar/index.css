@@ -19,6 +19,12 @@
 .nav-list {
   list-style: none;
   margin-right: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__link + .nav-list__link {
+  margin-left: 1rem;
 }
 
 .nav-list__link {

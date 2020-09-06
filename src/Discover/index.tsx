@@ -26,7 +26,6 @@ const Home = () => {
         })
         .catch((err) => {
           setLoader(false);
-          console.log("boom", err);
         });
     })();
   };

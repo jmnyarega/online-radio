@@ -67,6 +67,10 @@
   margin-left: 25%;
 }
 
+.player-audio__actions {
+  margin-top: 1rem;
+}
+
 @media (min-width: 900px) {
   .player {
     flex-direction: initial;
