@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Search from "../Common/search";
+import Loader from "../Common/Loader";
 import countries from "../data/countries.json";
 import "./index.css";
 
@@ -11,17 +12,23 @@ type Iurl = {
 const Home = () => {
   const [stationUrls, setStationUrls] = useState([]);
   const [stationNames, setStationName] = useState([]);
+  const [loading, setLoader] = useState(false);
 
   const getCountry = (e: React.FormEvent<HTMLSelectElement>) => {
     const country = e.currentTarget.value;
-    import(`../data/countries/${country}.json`)
-      .then((x) => {
-        setStationName(x.default);
-        setStationUrls(x.default);
-      })
-      .catch((err) => {
-        console.log("boom", err);
-      });
+    (() => {
+      setLoader(true);
+      import(`../data/countries/${country}.json`)
+        .then((x) => {
+          setStationName(x.default);
+          setStationUrls(x.default);
+          setLoader(false);
+        })
+        .catch((err) => {
+          setLoader(false);
+          console.log("boom", err);
+        });
+    })();
   };
 
   const search = (e: React.FormEvent<HTMLInputElement>) => {
@@ -68,6 +75,7 @@ const Home = () => {
             </span>
           </div>
           <div className=" results da-center row">
+            <Loader show={loading} />
             <ul className="results-container">
               {stationNames.slice(0, 10).map((x: any) => {
                 return (
