@@ -1,7 +1,3 @@
-.main-content {
-  padding-top: 2%;
-}
-
 .player {
   display: flex;
   flex-direction: column;
@@ -75,7 +71,6 @@
   }
   .player-radio__image {
     align-self: center;
-    margin-right: 2rem;
   }
   .player-radio__info {
     font-size: 1.25rem;

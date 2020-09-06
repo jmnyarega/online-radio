@@ -30,7 +30,8 @@ body {
   margin: auto;
 }
 
-.col + .col {
-  margin-left: 0;
+.main-content {
+  justify-content: center;
+  padding-top: 7%;
 }
 

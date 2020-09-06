@@ -3,7 +3,7 @@
 }
 
 .col + .col {
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 .da-center {
@@ -18,3 +18,4 @@
 .d-column {
   flex-direction: column;
 }
+
