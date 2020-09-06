@@ -10,6 +10,7 @@
 .player-radio__info {
   color: var(--lightAccent);
   font-size: 0.7rem;
+  width: 350px;
 }
 
 .player-item + .player-item {
@@ -25,7 +26,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 300px;
   width: 50%;
 }
 
