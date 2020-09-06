@@ -52,13 +52,13 @@ const Play = ({ location }: Iprops) => {
         <div className="main-content player row d-center">
           <div className="player-radio__image col">
             {currentStation && currentStation.favicon ? (
-              <img src={currentStation.favicon} alt="" width="300" />
-            ) : (
               <img
-                src="https://images.pexels.com/photos/1539/vintage-technology-music-old.jpg?cs=srgb&dl=pexels-splitshire-1539.jpg&fm=jpg"
+                src={currentStation.favicon}
                 alt=""
-                width="200"
+                className="player-audio__station-img"
               />
+            ) : (
+              <img src="" alt="" />
             )}
           </div>
           <div className="player-radio__info col">
@@ -107,17 +107,20 @@ const Play = ({ location }: Iprops) => {
           </div>
         </div>
         {currentStation && currentStation.url_resolved && (
-          <div className="player-audio__custom" onClick={customAudio}>
-            <audio
-              title={currentStation.name}
-              onError={onError}
-              onEnded={onEnded}
-              onPlaying={onPlaying}
-              onLoad={onLoad}
-              className="player-audio"
-              src={currentStation && currentStation.url_resolved}
-            />
-            <div className={play || "paused"}></div>
+          <div className="player-audio__custom-container">
+            <div className="player-audio__custom" onClick={customAudio}>
+              <audio
+                title={currentStation.name}
+                onError={onError}
+                onEnded={onEnded}
+                onPlaying={onPlaying}
+                onLoad={onLoad}
+                className="player-audio"
+                src={currentStation && currentStation.url_resolved}
+              />
+              <div className={play || "paused"}></div>
+            </div>
+            <hr className="player-audio__custom-streamline" />
           </div>
         )}
       </div>

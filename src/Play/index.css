@@ -31,21 +31,40 @@
 .paused {
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 37px solid var(--darkAccent);
+  border-bottom: 40px solid var(--gray);
   transform: translateX(10%) rotate(90deg);
 }
 
 .player-audio__custom {
   position: relative;
-  background-color: var(--lightAccent);
+  background-color: var(--darkAccent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 5rem;
   height: 5rem;
-  border: 1px solid var(--darkAccent);
   border-radius: 50%;
   margin: auto;
   display: grid;
   place-content: center;
   cursor: pointer;
+  z-index: 2;
+}
+
+.player-audio__station-img {
+  background-image: url(../assets/radio.jpg);
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.player-audio__custom-container {
+  position: relative;
+}
+
+.player-audio__custom-streamline {
+  position: absolute;
+  width: 100%;
+  bottom: 38%;
+  color: rgba(172, 172, 172, 0.25);
 }
 
 @media (min-width: 900px) {
