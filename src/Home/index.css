@@ -6,6 +6,10 @@
   text-align: center;
 }
 
+.title__small {
+  margin-left: 1rem;
+}
+
 .hero-text {
   text-align: center;
   color: var(--lightAccent);
