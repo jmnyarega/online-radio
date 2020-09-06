@@ -59,11 +59,11 @@ const Play = (props: Iprops) => {
             </div>
           ))
         ) : (
-          <p>
+          <p className="favourite__no-favourites">
             You haven't liked any Radio stations, go
-            <a href="/discover" className="link">
+            <Link to="/discover" className="link favourite-link">
               here
-            </a>
+            </Link>
             to find more
           </p>
         )}

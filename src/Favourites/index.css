@@ -7,3 +7,12 @@
   padding-top: 3rem;
   margin: 0;
 }
+
+.favourite__no-favourites {
+  color: var(--lightAccent);
+  font-size: 0.9rem;
+}
+
+.favourite-link {
+  padding: 0 0.5em;
+}
