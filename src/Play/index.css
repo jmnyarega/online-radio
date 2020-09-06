@@ -71,6 +71,7 @@
   }
   .player-radio__image {
     align-self: center;
+    margin-right: 2rem;
   }
   .player-radio__info {
     font-size: 1.25rem;

@@ -2,10 +2,6 @@
   display: flex;
 }
 
-.col + .col {
-  margin-left: 3rem;
-}
-
 .da-center {
   align-items: center;
   justify-content: center;

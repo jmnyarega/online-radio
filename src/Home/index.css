@@ -1,7 +1,3 @@
-.main-content {
-  padding: 2% 2em 0 2em;
-}
-
 .hero-intro {
   margin-bottom: 8rem;
 }
@@ -100,6 +96,7 @@
   }
   .hero-toplist {
     width: 45%;
+    margin-right: 2rem;
   }
   .hero-intro {
     width: 45%;
