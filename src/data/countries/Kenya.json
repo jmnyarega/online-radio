@@ -26,6 +26,32 @@
     "clicktrend": 1
   },
   {
+    "changeuuid": "06347bd7-9808-11e9-a605-52543be04c82",
+    "stationuuid": "06347bcb-9808-11e9-a605-52543be04c82",
+    "name": "Capital Kenya",
+    "url": "https://17943.live.streamtheworld.com/WIXXFM_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gdpr=0&us_privacy=1YNY&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTU5NzU2MTM1NywiaXNzIjoidGlzcnYifQ.qtpLTrO8aCn_q6JyfJVuq3Z3KLcsGbuRPesfHkzsDvo",
+    "url_resolved": "https://17943.live.streamtheworld.com/WIXXFM_SC?DIST=TuneIn&TGT=TuneIn&maxServers=2&gdpr=0&us_privacy=1YNY&partnertok=eyJhbGciOiJIUzI1NiIsImtpZCI6InR1bmVpbiIsInR5cCI6IkpXVCJ9.eyJ0cnVzdGVkX3BhcnRuZXIiOnRydWUsImlhdCI6MTU5NzU2MTM1NywiaXNzIjoidGlzcnYifQ.qtpLTrO8aCn_q6JyfJVuq3Z3KLcsGbuRPesfHkzsDvo",
+    "homepage": "",
+    "favicon": "wixx.ca/wixx2/static/assets/images/logo_wixx.png",
+    "tags": "",
+    "country": "USA",
+    "countrycode": "US",
+    "state": "",
+    "language": "English",
+    "votes": 7100,
+    "lastchangetime": "2020-01-23 20:40:50",
+    "codec": "MP3",
+    "bitrate": 128,
+    "hls": 0,
+    "lastcheckok": 1,
+    "lastchecktime": "2020-09-03 04:49:11",
+    "lastcheckoktime": "2020-09-03 04:49:11",
+    "lastlocalchecktime": "2020-09-02 08:41:49",
+    "clicktimestamp": "2020-09-02 15:16:28",
+    "clickcount": 56,
+    "clicktrend": 1
+  },
+  {
     "changeuuid": "6e7bfad9-1f1c-11e9-a80b-52543be04c81",
     "stationuuid": "6e7bfaca-1f1c-11e9-a80b-52543be04c81",
     "name": "Citizen TV",
@@ -494,4 +520,3 @@
     "clicktrend": -1
   }
 ]
-
