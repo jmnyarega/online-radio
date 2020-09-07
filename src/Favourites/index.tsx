@@ -3,11 +3,7 @@ import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-type Iprops = {
-  location: any;
-};
-
-const Play = (props: Iprops) => {
+const Play = () => {
   let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
   return (
     <div className="container main__background">

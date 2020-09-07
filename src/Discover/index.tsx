@@ -24,7 +24,7 @@ const Home = () => {
           setStationUrls(x.default);
           setLoader(false);
         })
-        .catch((err) => {
+        .catch(() => {
           setLoader(false);
         });
     })();
