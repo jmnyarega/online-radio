@@ -12,6 +12,7 @@
 .favourite__no-favourites {
   color: var(--lightAccent);
   font-size: 0.9rem;
+  text-align: center;
 }
 
 .favourite-link {
