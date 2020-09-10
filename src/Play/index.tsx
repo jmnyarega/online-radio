@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
 import "./index.css";
 
@@ -8,6 +8,12 @@ type Iprops = {
 
 const Play = ({ location }: Iprops) => {
   let currentStation = location && location.data;
+  useEffect(() => {
+    window.addEventListener("keypress", onKeyPress);
+    return () => {
+      window.addEventListener("keypress", onKeyPress);
+    };
+  }, []);
 
   currentStation &&
     localStorage.setItem("playing", JSON.stringify(currentStation));
@@ -34,6 +40,12 @@ const Play = ({ location }: Iprops) => {
       //@ts-ignore
       ctx.pause();
       setPlay("paused");
+    }
+  };
+
+  const onKeyPress = (event: any) => {
+    if (event.charCode === 32) {
+      customAudio();
     }
   };
 
