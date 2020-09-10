@@ -13,6 +13,7 @@ const Play = ({ location }: Iprops) => {
     return () => {
       window.addEventListener("keypress", onKeyPress);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   currentStation &&
