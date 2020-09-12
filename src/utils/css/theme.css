@@ -22,13 +22,7 @@ body {
   font-size: 1.25rem;
   margin: 0;
   min-height: 100vh;
-  background-image: radial-gradient(
-    farthest-corner at 60% 55%,
-    var(--light),
-    var(--lightAccent),
-    var(--accent),
-    var(--darkAccent)
-  );
+  background-color: black;
 }
 
 .container {
