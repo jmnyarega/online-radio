@@ -30,6 +30,9 @@ const Play = ({ location }: Iprops) => {
   const [play, setPlay] = useState("");
   const [liked, setLiked] = useState(previouslyLiked);
   const [url, setUrl] = useState(currentStation && currentStation.url_resolved);
+  const [imgUrl, setImgUrl] = useState(
+    currentStation && currentStation.favicon
+  );
 
   const customAudio = () => {
     const ctx = document.getElementsByClassName("player-audio")[0];
@@ -72,8 +75,13 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onEnded = () => {
-    console.log("Ended");
     customAudio();
+  };
+
+  const onImageError = () => {
+    setImgUrl(
+      "https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    );
   };
 
   return (
@@ -81,15 +89,12 @@ const Play = ({ location }: Iprops) => {
       <div className="main main__background">
         <div className="main-content player row d-center">
           <div className="player-radio__image col">
-            {currentStation && currentStation.favicon ? (
-              <img
-                src={currentStation.favicon}
-                alt=""
-                className="player-audio__station-img"
-              />
-            ) : (
-              <img src="" alt="" />
-            )}
+            <img
+              src={imgUrl}
+              alt=""
+              className="player-audio__station-img"
+              onError={onImageError}
+            />
           </div>
           <div className="player-radio__info col">
             <div className="player-radio__country player-item">
