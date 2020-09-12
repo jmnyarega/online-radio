@@ -29,6 +29,7 @@ const Play = ({ location }: Iprops) => {
 
   const [play, setPlay] = useState("");
   const [liked, setLiked] = useState(previouslyLiked);
+  const [url, setUrl] = useState(currentStation && currentStation.url_resolved);
 
   const customAudio = () => {
     const ctx = document.getElementsByClassName("player-audio")[0];
@@ -66,12 +67,13 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onError = () => {
-    alert("Playback error");
+    setUrl(currentStation && currentStation.url);
+    customAudio();
   };
 
   const onEnded = () => {
-    alert("Playback ended");
     console.log("Ended");
+    customAudio();
   };
 
   return (
@@ -156,7 +158,7 @@ const Play = ({ location }: Iprops) => {
                 onError={onError}
                 onEnded={onEnded}
                 className="player-audio"
-                src={currentStation && currentStation.url_resolved}
+                src={url}
               />
               <div className={play || "paused"}></div>
             </div>
