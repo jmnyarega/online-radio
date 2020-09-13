@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cd9e94fd-353a-4083-9b94-069f33672b74/deploy-status)](https://app.netlify.com/sites/determined-hugle-bfd7e2/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/cd9e94fd-353a-4083-9b94-069f33672b74/deploy-status)](https://app.netlify.com/sites/radio-radio/deploys)
 
 # Online Radio
 - This is a simple application that plays all radio stations all over the world
@@ -14,7 +14,7 @@
 - The _npm_start_ command with open the application on your default browser using [this](http://localhost:3000) url
 
 ### Running the application using online link
-- I have hosted this application on netlify, [here](https://determined-hugle-bfd7e2.netlify.app) is the link
+- I have hosted this application on netlify, [here](https://radio-radio.netlify.app) is the link
 
 ### Design Iterations
 - Iteration 1 [here](https://www.figma.com/proto/sanL6tHhxuE5dbhjdxpW0D/Radio?node-id=1%3A2&scaling=scale-down)
