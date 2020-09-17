@@ -49,8 +49,11 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onKeyPress = (event: any) => {
-    if (event.charCode === 32) {
-      customAudio();
+    const ctx = document.getElementsByClassName("player-audio")[0];
+    event.charCode === 32 && customAudio();
+    if (event.charCode === 109) {
+      //@ts-ignore
+      ctx.muted ? (ctx.muted = false) : (ctx.muted = true);
     }
   };
 
