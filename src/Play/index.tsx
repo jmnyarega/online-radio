@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
+import Audio from "../utils/js/utils";
 import "./index.css";
 
 type Iprops = {
@@ -7,7 +8,6 @@ type Iprops = {
 };
 
 const Play = ({ location }: Iprops) => {
-  let currentStation = location && location.data;
   useEffect(() => {
     window.addEventListener("keypress", onKeyPress);
     return () => {
@@ -16,75 +16,47 @@ const Play = ({ location }: Iprops) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  let currentStation = location && location.data;
   currentStation &&
     localStorage.setItem("playing", JSON.stringify(currentStation));
   if (!location.data && localStorage.getItem("playing") !== "undefined") {
     currentStation = JSON.parse(localStorage.getItem("playing") || "{}");
   }
 
-  let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
-  const previouslyLiked = likedItems.some(
-    (x: any) => x.changeuuid === currentStation.changeuuid
-  );
-
-  const [play, setPlay] = useState("");
-  const [liked, setLiked] = useState(previouslyLiked);
-  const [url, setUrl] = useState(currentStation && currentStation.url_resolved);
   const [imgUrl, setImgUrl] = useState(
     currentStation && currentStation.favicon
   );
-
-  const customAudio = () => {
-    const ctx = document.getElementsByClassName("player-audio")[0];
-    //@ts-ignore
-    if (ctx.paused) {
-      //@ts-ignore
-      ctx.play();
-      setPlay("playing");
-    } else {
-      //@ts-ignore
-      ctx.pause();
-      setPlay("paused");
-    }
-  };
+  const [url, setUrl] = useState("");
+  const [playing, setPlaying] = useState();
+  const [like, setLike] = useState(Audio.like(currentStation));
 
   const onKeyPress = (event: any) => {
-    const ctx = document.getElementsByClassName("player-audio")[0];
-    event.charCode === 32 && customAudio();
-    if (event.charCode === 109) {
-      //@ts-ignore
-      ctx.muted ? (ctx.muted = false) : (ctx.muted = true);
-    }
-  };
-
-  const like = () => {
-    if (liked) {
-      setLiked(false);
-      likedItems = likedItems.filter(
-        (x: any) => x.changeuuid !== currentStation.changeuuid
-      );
-    } else {
-      setLiked(true);
-      likedItems !== "undefined"
-        ? (likedItems = [...likedItems, currentStation])
-        : (likedItems = currentStation);
-    }
-    localStorage.setItem("liked", JSON.stringify(likedItems));
-  };
-
-  const onError = () => {
-    setUrl(currentStation && currentStation.url);
-    customAudio();
-  };
-
-  const onEnded = () => {
-    customAudio();
+    event.charCode === 48 && Audio.increasevolume();
+    event.charCode === 57 && Audio.decreasevolume();
+    event.charCode === 32 && Audio.play();
+    event.charCode === 109 && Audio.mute();
   };
 
   const onImageError = () => {
     setImgUrl(
       "https://images.pexels.com/photos/3783471/pexels-photo-3783471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
     );
+  };
+
+  const onError = () => {
+    setUrl(currentStation.url);
+    Audio.play();
+  };
+
+  const onEnded = () => {
+    Audio.play();
+  };
+
+  const onPlay = () => setPlaying(true);
+  const onPause = () => setPlaying(false);
+  const onLike = () => {
+    Audio.like(currentStation);
+    setLike(!like);
   };
 
   return (
@@ -149,10 +121,10 @@ const Play = ({ location }: Iprops) => {
             </div>
             <div className="player-audio__actions">
               <div
-                className={liked ? "heart" : "heart-o"}
+                className={like ? "heart" : "heart-o"}
                 role="button"
                 aria-pressed="false"
-                onClick={like}
+                onClick={onLike}
               ></div>
             </div>
           </div>
@@ -160,15 +132,17 @@ const Play = ({ location }: Iprops) => {
 
         {currentStation && currentStation.url_resolved && (
           <div className="player-audio__custom-container">
-            <div className="player-audio__custom" onClick={customAudio}>
+            <div className="player-audio__custom" onClick={Audio.play}>
               <audio
                 title={currentStation.name}
                 onError={onError}
+                onPlay={onPlay}
+                onPause={onPause}
                 onEnded={onEnded}
                 className="player-audio"
                 src={url}
               />
-              <div className={play || "paused"}></div>
+              <div className={playing ? "playing" : "paused"}></div>
             </div>
             <hr className="player-audio__custom-streamline" />
           </div>
