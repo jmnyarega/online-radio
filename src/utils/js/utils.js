@@ -1,6 +1,6 @@
 class Audio {
   constructor() {
-    this.volume = 5;
+    this.volume = 1;
     this.positivePress = 0;
     this.negativePress = 0;
   }
@@ -23,6 +23,7 @@ class Audio {
     this.positivePress += 1;
     const newVolume = (this.volume + this.positivePress) / 10;
     ctx.volume = newVolume <= 1 ? newVolume : 1;
+    this.volume = (newVolume <= 1 ? newVolume : 1) * 10;
   };
 
   decreasevolume = () => {
@@ -31,6 +32,7 @@ class Audio {
     this.negativePress += 1;
     const newVolume = (this.volume - this.negativePress) / 10;
     ctx.volume = newVolume >= 0 ? newVolume : 0;
+    this.volume = (newVolume >= 0 ? newVolume : 0) * 10;
   };
 
   mute = () => {
