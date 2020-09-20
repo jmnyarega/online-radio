@@ -26,9 +26,10 @@ const Play = ({ location }: Iprops) => {
   const [imgUrl, setImgUrl] = useState(
     currentStation && currentStation.favicon
   );
-  const [url, setUrl] = useState("");
+
+  const [url, setUrl] = useState(currentStation.url_resolved);
   const [playing, setPlaying] = useState();
-  const [like, setLike] = useState(Audio.like(currentStation));
+  const [like, setLike] = useState(Audio.liked(currentStation));
 
   const onKeyPress = (event: any) => {
     event.charCode === 48 && Audio.increasevolume();
@@ -45,6 +46,7 @@ const Play = ({ location }: Iprops) => {
 
   const onError = () => {
     setUrl(currentStation.url);
+    alert("playback error");
     Audio.play();
   };
 
@@ -140,7 +142,10 @@ const Play = ({ location }: Iprops) => {
                 onPause={onPause}
                 onEnded={onEnded}
                 className="player-audio"
+                crossOrigin="anonymous"
                 src={url}
+                media-player="audioPlayer"
+                preload="auto"
               />
               <div className={playing ? "playing" : "paused"}></div>
             </div>

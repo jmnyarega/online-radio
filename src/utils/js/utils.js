@@ -41,7 +41,7 @@ class Audio {
   like = (currentStation) => {
     let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
     let itemLiked = false;
-    if (this.getLikedItems(currentStation)) {
+    if (this.liked(currentStation)) {
       likedItems = likedItems.filter(
         (x) => x.changeuuid !== currentStation.changeuuid
       );
@@ -55,7 +55,7 @@ class Audio {
     return itemLiked;
   };
 
-  getLikedItems = (currentStation) => {
+  liked = (currentStation) => {
     let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
     const previouslyLiked = likedItems.find((x) => {
       return x.changeuuid === currentStation.changeuuid;
