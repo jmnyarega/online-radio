@@ -61,7 +61,7 @@
 
 .mostlistened__radio-name {
   color: var(--darkAccent);
-  font-size: 10px;
+  font-size: 12px;
   text-transform: capitalize;
   width: 5rem;
   overflow: hidden;
