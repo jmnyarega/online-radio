@@ -16,9 +16,12 @@
   margin-left: 2em;
 }
 
+nav {
+  margin-right: 2em;
+}
+
 .nav-list {
   list-style: none;
-  margin-right: 2em;
   display: flex;
   justify-content: space-between;
 }
