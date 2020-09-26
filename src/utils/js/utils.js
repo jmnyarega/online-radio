@@ -35,6 +35,12 @@ class Audio {
     this.volume = (newVolume >= 0 ? newVolume : 0) * 10;
   };
 
+  setVolume = (number) => {
+    const ctx = document.getElementsByClassName("player-audio")[0];
+    this.volume = number;
+    ctx.volume = number / 10;
+  };
+
   mute = () => {
     const ctx = document.getElementsByClassName("player-audio")[0];
     ctx.muted ? (ctx.muted = false) : (ctx.muted = true);

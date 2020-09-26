@@ -30,6 +30,7 @@ const Play = ({ location }: Iprops) => {
   const [url, setUrl] = useState(currentStation.url_resolved);
   const [playing, setPlaying] = useState();
   const [like, setLike] = useState(Audio.liked(currentStation));
+  const [volume, setVolume] = useState(0);
 
   const onKeyPress = (event: any) => {
     event.charCode === 48 && Audio.increasevolume();
@@ -52,6 +53,11 @@ const Play = ({ location }: Iprops) => {
 
   const onEnded = () => {
     Audio.play();
+  };
+
+  const handleVolume = (e: any) => {
+    setVolume(e.target.value);
+    Audio.setVolume(volume);
   };
 
   const onPlay = () => setPlaying(true);
@@ -161,9 +167,17 @@ const Play = ({ location }: Iprops) => {
                 media-player="audioPlayer"
                 preload="auto"
               />
+
               <div className={playing ? "playing" : "paused"}></div>
             </div>
-            <hr className="player-audio__custom-streamline" />
+            <input
+              type="range"
+              name="volume"
+              value={volume}
+              min="0"
+              max="10"
+              onChange={handleVolume}
+            />
           </div>
         )}
       </div>

@@ -51,7 +51,6 @@
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  margin: auto;
   display: grid;
   place-content: center;
   cursor: pointer;
@@ -68,6 +67,9 @@
 
 .player-audio__custom-container {
   position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .player-audio__custom-streamline {
