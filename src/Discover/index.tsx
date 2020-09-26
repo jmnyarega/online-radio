@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { withRouter } from "react-router";
 import Search from "../Common/search";
 import Loader from "../Common/Loader";
 import countries from "../data/countries.json";
@@ -9,13 +10,13 @@ type Iurl = {
   name: string;
 };
 
-const Home = () => {
+const Home = (props: any) => {
   const [stationUrls, setStationUrls] = useState([]);
   const [stationNames, setStationName] = useState([]);
   const [loading, setLoader] = useState(false);
 
   const getCountry = (e: React.FormEvent<HTMLSelectElement>) => {
-    const country = e.currentTarget.value;
+    const country = e.currentTarget ? e.currentTarget.value : e;
     (() => {
       setLoader(true);
       import(`../data/countries/${country}.json`)
@@ -29,6 +30,13 @@ const Home = () => {
         });
     })();
   };
+
+  useEffect(() => {
+    if (props.location.stationNames) {
+      setStationName(props.location.stationNames);
+      setStationUrls(props.location.stationUrls);
+    }
+  }, [props.location.stationNames, props.location.stationUrls]);
 
   const search = (e: React.FormEvent<HTMLInputElement>) => {
     const term = e.currentTarget.value;
@@ -84,6 +92,8 @@ const Home = () => {
                         ...location,
                         pathname: "/play",
                         data: x,
+                        stationNames,
+                        stationUrls,
                       })}
                       className="results-text"
                     >
@@ -99,4 +109,4 @@ const Home = () => {
     </div>
   );
 };
-export default Home;
+export default withRouter(Home);

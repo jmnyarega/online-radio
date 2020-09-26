@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 import Audio from "../utils/js/utils";
 import "./index.css";
 
@@ -13,7 +14,6 @@ const Play = ({ location }: Iprops) => {
     return () => {
       window.addEventListener("keypress", onKeyPress);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let currentStation = location && location.data;
@@ -83,7 +83,17 @@ const Play = ({ location }: Iprops) => {
             <div className="player-radio__country player-item">
               <span className="key">Country:</span>
               <span className="value">
-                {currentStation && currentStation.country}
+                <Link
+                  className="link"
+                  to={(props) => ({
+                    ...props,
+                    pathname: "/discover",
+                    stationNames: location.stationNames,
+                    stationUrls: location.stationUrls,
+                  })}
+                >
+                  {currentStation && currentStation.country}
+                </Link>
               </span>
             </div>
             <div className="player-radio__language player-item">
