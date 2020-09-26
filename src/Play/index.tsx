@@ -83,17 +83,21 @@ const Play = ({ location }: Iprops) => {
             <div className="player-radio__country player-item">
               <span className="key">Country:</span>
               <span className="value">
-                <Link
-                  className="link"
-                  to={(props) => ({
-                    ...props,
-                    pathname: "/discover",
-                    stationNames: location.stationNames,
-                    stationUrls: location.stationUrls,
-                  })}
-                >
-                  {currentStation && currentStation.country}
-                </Link>
+                {location.stationNames ? (
+                  <Link
+                    className="link"
+                    to={(props) => ({
+                      ...props,
+                      pathname: "/discover",
+                      stationNames: location.stationNames,
+                      stationUrls: location.stationUrls,
+                    })}
+                  >
+                    {currentStation && currentStation.country}
+                  </Link>
+                ) : (
+                  currentStation && currentStation.country
+                )}
               </span>
             </div>
             <div className="player-radio__language player-item">
