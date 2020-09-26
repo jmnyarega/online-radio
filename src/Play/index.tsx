@@ -30,7 +30,7 @@ const Play = ({ location }: Iprops) => {
   const [url, setUrl] = useState(currentStation.url_resolved);
   const [playing, setPlaying] = useState();
   const [like, setLike] = useState(Audio.liked(currentStation));
-  const [volume, setVolume] = useState(0);
+  const [volume, setVolume] = useState(1);
 
   const onKeyPress = (event: any) => {
     event.charCode === 48 && Audio.increasevolume();
