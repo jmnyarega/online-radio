@@ -15,7 +15,7 @@ const Play = ({ location }: Iprops) => {
     return () => {
       window.addEventListener("keypress", onKeyPress);
     };
-  });
+  }, []); // eslint-disable-line
 
   let currentStation = location && location.data;
   currentStation &&
