@@ -17,22 +17,18 @@ class Audio {
     return state;
   };
 
-  increasevolume = () => {
-    const ctx = document.getElementsByClassName("player-audio")[0];
-    this.negativePress = 0;
-    this.positivePress += 1;
-    const newVolume = (this.volume + this.positivePress) / 10;
-    ctx.volume = newVolume <= 1 ? newVolume : 1;
-    this.volume = (newVolume <= 1 ? newVolume : 1) * 10;
+  increasevolume = (volume) => {
+    if (volume > -1 && volume < 11) {
+      const ctx = document.getElementsByClassName("player-audio")[0];
+      ctx.volume = volume / 10;
+    }
   };
 
-  decreasevolume = () => {
-    const ctx = document.getElementsByClassName("player-audio")[0];
-    this.positivePress = 0;
-    this.negativePress += 1;
-    const newVolume = (this.volume - this.negativePress) / 10;
-    ctx.volume = newVolume >= 0 ? newVolume : 0;
-    this.volume = (newVolume >= 0 ? newVolume : 0) * 10;
+  decreasevolume = (volume) => {
+    if (volume > -1 && volume < 11) {
+      const ctx = document.getElementsByClassName("player-audio")[0];
+      ctx.volume = volume / 10;
+    }
   };
 
   setVolume = (number) => {

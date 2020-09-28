@@ -9,12 +9,13 @@ type Iprops = {
 };
 
 const Play = ({ location }: Iprops) => {
+  let volumes = 0;
   useEffect(() => {
     window.addEventListener("keypress", onKeyPress);
     return () => {
       window.addEventListener("keypress", onKeyPress);
     };
-  }, []);
+  });
 
   let currentStation = location && location.data;
   currentStation &&
@@ -33,10 +34,14 @@ const Play = ({ location }: Iprops) => {
   const [volume, setVolume] = useState(1);
 
   const onKeyPress = (event: any) => {
-    event.charCode === 48 && Audio.increasevolume();
-    event.charCode === 57 && Audio.decreasevolume();
+    if (volumes >= 0 && volumes <= 10) {
+      if (event.charCode === 48) Audio.increasevolume((volumes += 1));
+      if (event.charCode === 57) Audio.decreasevolume((volumes -= 1));
+    } else if (volumes < 0) volumes = 0;
+    else if (volumes > 10) volumes = 10;
     event.charCode === 32 && Audio.play();
     event.charCode === 109 && Audio.mute();
+    setVolume(volumes);
   };
 
   const onImageError = () => {
