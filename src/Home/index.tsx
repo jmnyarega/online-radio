@@ -4,7 +4,7 @@ import top5 from "../data/top.json";
 import Disc from "../Common/disc";
 import "./index.css";
 
-const Home = () => (
+const Home = (): any => (
   <div className="container">
     <div className="main main__background">
       <div className="main-content">

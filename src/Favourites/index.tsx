@@ -3,7 +3,7 @@ import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-const Play = () => {
+const Favourites = () => {
   let likedItems = JSON.parse(localStorage.getItem("liked" || "{}") || "[]");
   return (
     <div className="container main__background">
@@ -68,4 +68,4 @@ const Play = () => {
   );
 };
 
-export default withRouter(Play);
+export default withRouter(Favourites);
