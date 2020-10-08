@@ -12,6 +12,7 @@ const NavBar = (props: any): any => {
     const { pathname } = location;
     const mapLinks: any = {
       "/": "home",
+      "/play": "home",
       "/favourites": "favourites",
       "/discover": "discover",
     };
