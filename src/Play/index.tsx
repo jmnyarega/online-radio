@@ -12,7 +12,9 @@ const Play = ({ location }: Iprops) => {
   let volumes = 0;
   useEffect(() => {
     window.addEventListener("keypress", onKeyPress);
+    window.addEventListener("wheel", onMouseRoll);
     return () => {
+      window.addEventListener("wheel", onMouseRoll);
       window.addEventListener("keypress", onKeyPress);
     };
   }, []); // eslint-disable-line
@@ -41,6 +43,16 @@ const Play = ({ location }: Iprops) => {
     else if (volumes > 10) volumes = 10;
     event.charCode === 32 && Audio.play();
     event.charCode === 109 && Audio.mute();
+    setVolume(volumes);
+  };
+
+  const onMouseRoll = (event: any) => {
+    console.log(event);
+    if (volumes >= 0 && volumes <= 10) {
+      if (event.deltaY > 0) Audio.increasevolume((volumes += 1));
+      if (event.deltaY < 0) Audio.decreasevolume((volumes -= 1));
+    } else if (volumes < 0) volumes = 0;
+    else if (volumes > 10) volumes = 10;
     setVolume(volumes);
   };
 
