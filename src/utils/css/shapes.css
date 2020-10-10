@@ -66,4 +66,5 @@
 .heart-o:hover,
 .heart:hover {
   transform: rotate(-45deg) scale(1.7);
+  transition: transform 0.5s ease-in-out;
 }

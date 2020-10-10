@@ -101,15 +101,15 @@
 }
 
 .border {
-  border-left: 2px solid var(--lightAccent);
-  border-right: 2px solid var(--lightAccent);
-  border-bottom: 2px solid var(--lightAccent);
+  border-left: 3px solid var(--lightAccent);
+  border-right: 3px solid var(--lightAccent);
+  border-bottom: 3px solid var(--lightAccent);
 }
 
 .border-error {
-  border-left: 2px solid #f00;
-  border-right: 2px solid #f00;
-  border-bottom: 2px solid #f00;
+  border-left: 3px solid #f00;
+  border-right: 3px solid #f00;
+  border-bottom: 3px solid #f00;
 }
 
 .icon {

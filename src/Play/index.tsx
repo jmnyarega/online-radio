@@ -185,7 +185,6 @@ const Play = ({ location }: Iprops) => {
                 onPause={onPause}
                 onEnded={onEnded}
                 className="player-audio"
-                crossOrigin="anonymous"
                 src={url}
                 media-player="audioPlayer"
                 preload="auto"

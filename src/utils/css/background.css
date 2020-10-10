@@ -5,6 +5,5 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-
   min-height: calc(100vh - 74px);
 }
