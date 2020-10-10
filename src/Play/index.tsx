@@ -184,7 +184,7 @@ const Play = ({ location }: Iprops) => {
                 onPause={onPause}
                 onEnded={onEnded}
                 className="player-audio"
-                src={url}
+                src={url.replace("http:", "https:")}
                 media-player="audioPlayer"
                 preload="auto"
               />
