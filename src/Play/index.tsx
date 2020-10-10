@@ -164,6 +164,7 @@ const Play = ({ location }: Iprops) => {
               </span>
             </div>
             <div className="player-audio__actions">
+              {/* eslint-disable-next-line */}
               <a className={like ? "heart" : "heart-o"} onClick={onLike}>
                 {" "}
               </a>
