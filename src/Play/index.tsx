@@ -94,7 +94,7 @@ const Play = ({ location }: Iprops) => {
         <div className="main-content player row d-center">
           <div className="player-radio__image col">
             <img
-              src={imgUrl}
+              src={imgUrl.replace("http:", "https:")}
               alt=""
               className="player-audio__station-img"
               onError={onImageError}
@@ -184,7 +184,7 @@ const Play = ({ location }: Iprops) => {
                 onPause={onPause}
                 onEnded={onEnded}
                 className="player-audio"
-                src={url.replace("http:", "https:")}
+                src={url}
                 media-player="audioPlayer"
                 preload="auto"
               />
