@@ -48,7 +48,6 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onMouseRoll = (event: any) => {
-    console.log(event);
     if (volumes >= 0 && volumes <= 10) {
       if (event.deltaY < 0) Audio.increasevolume((volumes += 1));
       if (event.deltaY > 0) Audio.decreasevolume((volumes -= 1));
