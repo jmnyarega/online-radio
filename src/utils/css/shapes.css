@@ -63,3 +63,7 @@
   top: 0;
 }
 
+.heart-o:hover,
+.heart:hover {
+  transform: rotate(-45deg) scale(1.7);
+}

@@ -65,6 +65,7 @@ const Play = ({ location }: Iprops) => {
 
   const onError = () => {
     setUrl(currentStation.url);
+    setPlaying(false);
     setError(true);
     alert("playback error");
     Audio.play();
@@ -72,6 +73,7 @@ const Play = ({ location }: Iprops) => {
 
   const onEnded = () => {
     setError(true);
+    setPlaying(false);
     Audio.play();
   };
 
@@ -162,12 +164,9 @@ const Play = ({ location }: Iprops) => {
               </span>
             </div>
             <div className="player-audio__actions">
-              <div
-                className={like ? "heart" : "heart-o"}
-                role="button"
-                aria-pressed="false"
-                onClick={onLike}
-              ></div>
+              <a className={like ? "heart" : "heart-o"} onClick={onLike}>
+                {" "}
+              </a>
             </div>
           </div>
         </div>
