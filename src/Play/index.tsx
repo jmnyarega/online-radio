@@ -63,7 +63,7 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onError = () => {
-    setUrl(currentStation.url);
+    setUrl(url.replace("http:", "https:"));
     setPlaying(false);
     setError(true);
     alert("playback error");
@@ -94,7 +94,7 @@ const Play = ({ location }: Iprops) => {
         <div className="main-content player row d-center">
           <div className="player-radio__image col">
             <img
-              src={imgUrl.replace("http:", "https:")}
+              src={imgUrl}
               alt=""
               className="player-audio__station-img"
               onError={onImageError}
