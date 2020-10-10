@@ -34,6 +34,7 @@ const Play = ({ location }: Iprops) => {
   const [playing, setPlaying] = useState();
   const [like, setLike] = useState(Audio.liked(currentStation));
   const [volume, setVolume] = useState(1);
+  const [error, setError] = useState(false);
 
   const onKeyPress = (event: any) => {
     if (volumes >= 0 && volumes <= 10) {
@@ -64,11 +65,13 @@ const Play = ({ location }: Iprops) => {
 
   const onError = () => {
     setUrl(currentStation.url);
+    setError(true);
     alert("playback error");
     Audio.play();
   };
 
   const onEnded = () => {
+    setError(true);
     Audio.play();
   };
 
@@ -171,7 +174,10 @@ const Play = ({ location }: Iprops) => {
 
         {currentStation && currentStation.url_resolved && (
           <div className="player-audio__custom-container">
-            <div className="player-audio__custom" onClick={Audio.play}>
+            <div
+              className="player-audio__custom player-audio__loading"
+              onClick={Audio.play}
+            >
               <audio
                 title={currentStation.name}
                 onError={onError}
@@ -184,8 +190,19 @@ const Play = ({ location }: Iprops) => {
                 media-player="audioPlayer"
                 preload="auto"
               />
-
-              <div className={playing ? "playing" : "paused"}></div>
+              <div className="circle-wrapper">
+                <div
+                  className={`${playing ? "circle" : "circle-pause"} ${
+                    error ? "border-error circle-pause" : "border"
+                  }`}
+                />
+                <div className="icon">
+                  <i
+                    className={`${playing ? "fa fa-pause" : "fa fa-play"}`}
+                    aria-hidden="true"
+                  />
+                </div>
+              </div>
             </div>
             <input
               type="range"

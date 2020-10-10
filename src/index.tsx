@@ -9,6 +9,7 @@ import "./utils/css/typography.css";
 import "./utils/css/button.css";
 import "./utils/css/shapes.css";
 import "./utils/css/input.css";
+import "./utils/css/animations.css";
 
 ReactDOM.render(
   <React.StrictMode>
