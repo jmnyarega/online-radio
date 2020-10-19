@@ -5,6 +5,11 @@ import Discover from "../Discover";
 import Home from "../Home";
 import Favourites from "../Favourites";
 import Play from "../Play";
+import { Bugfender } from "@bugfender/sdk";
+
+Bugfender.init({
+  appKey: "nhAJcOFSSL0mvlZAxFx8eahMmrSJtscC",
+});
 
 function App() {
   return (
