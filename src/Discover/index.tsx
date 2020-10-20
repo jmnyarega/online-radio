@@ -14,29 +14,30 @@ const Home = (props: any) => {
   const [stationUrls, setStationUrls] = useState([]);
   const [stationNames, setStationName] = useState([]);
   const [loading, setLoader] = useState(false);
+  const [country, setCountry] = useState();
 
   const getCountry = (e: React.FormEvent<HTMLSelectElement>) => {
-    const country = e.currentTarget ? e.currentTarget.value : e;
-    (() => {
-      setLoader(true);
-      import(`../data/countries/${country}.json`)
-        .then((x) => {
-          setStationName(x.default);
-          setStationUrls(x.default);
-          setLoader(false);
-        })
-        .catch(() => {
-          setLoader(false);
-        });
-    })();
+    const { value } = e.currentTarget;
+    setCountry(value);
+    setLoader(true);
   };
+
+  const getData = async () => {
+    const data = await import(`../data/countries/${country}.json`);
+    setStationName(data.default);
+    setStationUrls(data.default);
+    setLoader(false);
+  };
+
+  loading && getData();
 
   useEffect(() => {
     if (props.location.stationNames) {
       setStationName(props.location.stationNames);
       setStationUrls(props.location.stationUrls);
+      setCountry(props.location.data?.country);
     }
-  }, [props.location.stationNames, props.location.stationUrls]);
+  }, [props]);
 
   const search = (e: React.FormEvent<HTMLInputElement>) => {
     const term = e.currentTarget.value;
@@ -55,6 +56,7 @@ const Home = (props: any) => {
             <select
               className="search__select-country block"
               onChange={getCountry}
+              value={country}
             >
               <option value="">---Select Country---</option>
               {countries
