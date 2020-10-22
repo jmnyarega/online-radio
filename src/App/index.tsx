@@ -10,6 +10,7 @@ import { Bugfender } from "@bugfender/sdk";
 Bugfender.init({
   appKey: "nhAJcOFSSL0mvlZAxFx8eahMmrSJtscC",
 });
+Bugfender.enableCrashReporting();
 
 function App() {
   return (
