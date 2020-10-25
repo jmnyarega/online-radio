@@ -42,6 +42,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  align-items: center;
 }
 
 .player-audio__custom-streamline {

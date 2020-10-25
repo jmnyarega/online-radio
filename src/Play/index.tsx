@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import Audio from "../utils/js/utils";
+import Mute from "../Common/mute";
 import "./index.css";
 
 type Iprops = {
@@ -35,6 +36,7 @@ const Play = ({ location }: Iprops) => {
   const [like, setLike] = useState(Audio.liked(currentStation));
   const [volume, setVolume] = useState(1);
   const [error, setError] = useState(false);
+  const [mute, setMute] = useState(false);
 
   const onKeyPress = (event: any) => {
     if (volumes >= 0 && volumes <= 10) {
@@ -44,7 +46,6 @@ const Play = ({ location }: Iprops) => {
     else if (volumes > 10) volumes = 10;
     event.charCode === 32 && Audio.play();
     event.charCode === 109 && Audio.mute();
-    setVolume(volumes);
   };
 
   const onMouseRoll = (event: any) => {
@@ -79,6 +80,11 @@ const Play = ({ location }: Iprops) => {
   const handleVolume = (e: any) => {
     setVolume(e.target.value);
     Audio.setVolume(volume);
+  };
+
+  const onMute = () => {
+    const muted = Audio.mute();
+    setMute(muted);
   };
 
   const onPlay = () => setPlaying(true);
@@ -210,6 +216,10 @@ const Play = ({ location }: Iprops) => {
               max="10"
               onChange={handleVolume}
             />
+            {/* eslint-disable */}
+            <a onClick={onMute} style={{ cursor: "pointer" }}>
+              <Mute muted={mute} />
+            </a>
           </div>
         )}
       </div>

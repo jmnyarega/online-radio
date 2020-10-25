@@ -40,6 +40,7 @@ class Audio {
   mute = () => {
     const ctx = document.getElementsByClassName("player-audio")[0];
     ctx.muted ? (ctx.muted = false) : (ctx.muted = true);
+    return ctx.muted;
   };
 
   like = (currentStation) => {
