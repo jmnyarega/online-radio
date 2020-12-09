@@ -11,6 +11,13 @@ import "./utils/css/shapes.css";
 import "./utils/css/input.css";
 import "./utils/css/animations.css";
 
+/* istanbul ignore file */
+import { Bugfender } from "@bugfender/sdk";
+
+Bugfender.init({
+  appKey: "nhAJcOFSSL0mvlZAxFx8eahMmrSJtscC",
+});
+
 ReactDOM.render(
   <React.StrictMode>
     <HashRouter>

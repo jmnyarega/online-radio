@@ -10,7 +10,7 @@ type Iurl = {
   name: string;
 };
 
-const Home = (props: any) => {
+export const Home = (props: any) => {
   const [stationUrls, setStationUrls] = useState([]);
   const [stationNames, setStationName] = useState([]);
   const [loading, setLoader] = useState(false);
@@ -83,7 +83,7 @@ const Home = (props: any) => {
               <Search width={24} height={24} fill="rgb(242,242,242)" />
             </span>
           </div>
-          <div className=" results da-center row">
+          <div className="results da-center row">
             <Loader show={loading} />
             <ul className="results-container">
               {stationNames.slice(0, 10).map((x: any) => {
