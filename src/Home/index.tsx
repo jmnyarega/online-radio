@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import Disc from "../Common/disc";
 import "./index.css";
 
-const Home = (): any => (
+type Iprops = {
+  mostlistened: Array<number>;
+};
+
+export const Home = ({ mostlistened }: Iprops): any => (
   <div className="container">
     <div className="main main__background">
       <div className="main-content">
@@ -28,8 +32,9 @@ const Home = (): any => (
             <h4 className="title title__small col">Most listened Stations</h4>
           </div>
           <div className="mostlistened">
-            {[0, 2, 6, 8].map((x) => (
+            {mostlistened.map((x) => (
               <iframe
+                key={x}
                 title={`home radio ${x}`}
                 src={`https://tunein.com/embed/player/s2972${x}/`}
                 scrolling="no"

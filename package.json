@@ -13,6 +13,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.5",
     "axios": "^0.20.0",
+    "enzyme-to-json": "^3.6.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router": "^5.2.0",
@@ -46,8 +47,11 @@
     "@types/enzyme": "^3.10.8",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
-    "eslint-scope": "^5.1.0",
+    "eslint-scope": "^5.1.1",
     "natural-compare": "^1.4.0",
     "react-test-renderer": "^17.0.1"
-  }
+  },
+  "setupFiles": [
+    "<rootDir>/src/setupTests.js"
+  ]
 }
