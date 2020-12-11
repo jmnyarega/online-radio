@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
-import { Link } from "react-router-dom";
 import Audio from "../utils/js/utils";
-import Mute from "../Common/mute";
+import Player from "./Components/Player/index";
+import StationInfo from "./Components/StationInfo/index";
+import { Ilocation } from "../Common/types/location";
 import "./index.css";
 
 type Iprops = {
-  location: any;
+  location: Ilocation;
 };
 
 const Play = ({ location }: Iprops) => {
@@ -20,18 +21,16 @@ const Play = ({ location }: Iprops) => {
     };
   }, []); // eslint-disable-line
 
-  let currentStation = location && location.data;
+  let currentStation = location?.data;
   currentStation &&
     localStorage.setItem("playing", JSON.stringify(currentStation));
   if (!location.data && localStorage.getItem("playing") !== "undefined") {
     currentStation = JSON.parse(localStorage.getItem("playing") || "{}");
   }
 
-  const [imgUrl, setImgUrl] = useState(
-    currentStation && currentStation.favicon
-  );
+  const [imgUrl, setImgUrl] = useState(currentStation?.favicon);
 
-  const [url, setUrl] = useState(currentStation.url_resolved);
+  const [url, setUrl] = useState(currentStation?.url_resolved);
   const [playing, setPlaying] = useState();
   const [like, setLike] = useState(Audio.liked(currentStation));
   const [volume, setVolume] = useState(1);
@@ -64,7 +63,7 @@ const Play = ({ location }: Iprops) => {
   };
 
   const onError = () => {
-    setUrl(url.replace("http:", "https:"));
+    setUrl(url?.replace("http:", "https:"));
     setPlaying(false);
     setError(true);
     alert("playback error");
@@ -98,129 +97,32 @@ const Play = ({ location }: Iprops) => {
     <div className="container">
       <div className="main main__background">
         <div className="main-content player row d-center">
-          <div className="player-radio__image col">
-            <img
-              src={imgUrl}
-              alt=""
-              className="player-audio__station-img"
-              onError={onImageError}
-            />
-          </div>
-          <div className="player-radio__info col">
-            <div className="player-radio__country player-item">
-              <span className="key">Name:</span>
-              <span className="value">
-                {currentStation && currentStation.name}
-              </span>
-            </div>
-            <div className="player-radio__country player-item">
-              <span className="key">Country:</span>
-              <span className="value">
-                {location.stationNames ? (
-                  <Link
-                    className="link"
-                    to={(props) => ({
-                      ...props,
-                      pathname: "/discover",
-                      stationNames: location.stationNames,
-                      stationUrls: location.stationUrls,
-                    })}
-                  >
-                    {currentStation && currentStation.country}
-                  </Link>
-                ) : (
-                  currentStation && currentStation.country
-                )}
-              </span>
-            </div>
-            <div className="player-radio__language player-item">
-              <span className="key">Language:</span>
-              <span className="value">
-                {currentStation && currentStation.language}
-              </span>
-            </div>
-            <div className="player-radio__website player-item">
-              <span className="key">Website:</span>
-              <span className="value">
-                <a
-                  className="link"
-                  href={currentStation && currentStation.homepage}
-                >
-                  website
-                </a>
-              </span>
-            </div>
-            <div className="player-radio__tags player-item">
-              <span className="key">Tags:</span>
-              <span className="value">
-                {currentStation && currentStation.tags}
-              </span>
-            </div>
-            <div className="player-radio__country-code player-item">
-              <span className="key">Country Code:</span>
-              <span className="value">
-                {currentStation && currentStation.countrycode}
-              </span>
-            </div>
-            <div className="player-radio__votes player-item">
-              <span className="key">Votes:</span>
-              <span className="value">
-                {currentStation && currentStation.votes}
-              </span>
-            </div>
-            <div className="player-audio__actions">
-              {/* eslint-disable-next-line */}
-              <a className={like ? "heart" : "heart-o"} onClick={onLike}>
-                {" "}
-              </a>
-            </div>
-          </div>
+          <StationInfo
+            currentStation={currentStation}
+            location={location}
+            onLike={onLike}
+            like={like}
+            imgUrl={imgUrl}
+            onImageError={onImageError}
+          />
         </div>
 
-        {currentStation && currentStation.url_resolved && (
-          <div className="player-audio__custom-container">
-            <div
-              className="player-audio__custom player-audio__loading"
-              onClick={Audio.play}
-            >
-              <audio
-                title={currentStation.name}
-                onError={onError}
-                onPlay={onPlay}
-                onPause={onPause}
-                onEnded={onEnded}
-                className="player-audio"
-                src={url}
-                media-player="audioPlayer"
-                preload="auto"
-              />
-              <div className="circle-wrapper">
-                <div
-                  className={`${playing ? "circle" : "circle-pause"} ${
-                    error ? "border-error circle-pause" : "border"
-                  }`}
-                />
-                <div className="icon">
-                  <i
-                    className={`${playing ? "fa fa-pause" : "fa fa-play"}`}
-                    aria-hidden="true"
-                  />
-                </div>
-              </div>
-            </div>
-            <input
-              type="range"
-              name="volume"
-              value={volume}
-              min="0"
-              max="10"
-              onChange={handleVolume}
-            />
-            {/* eslint-disable */}
-            <a onClick={onMute} style={{ cursor: "pointer" }}>
-              <Mute muted={mute} />
-            </a>
-          </div>
+        {currentStation?.url_resolved && (
+          <Player
+            currentStation={currentStation}
+            onError={onError}
+            onPlay={onPlay}
+            url={url}
+            onPause={onPause}
+            onEnded={onEnded}
+            error={error}
+            playing={playing}
+            volume={volume}
+            handleVolume={handleVolume}
+            onMute={onMute}
+            mute={mute}
+            Audio={Audio}
+          />
         )}
       </div>
     </div>

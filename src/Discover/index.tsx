@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import Search from "../Common/search";
 import Loader from "../Common/Loader";
 import countries from "../data/countries.json";
+import { Istation } from "../Common/types/location";
 import "./index.css";
 
 type Iurl = {
@@ -86,7 +87,7 @@ export const Home = (props: any) => {
           <div className="results da-center row">
             <Loader show={loading} />
             <ul className="results-container">
-              {stationNames.slice(0, 10).map((x: any) => {
+              {stationNames.slice(0, 10).map((x: Istation) => {
                 return (
                   <li className="results-lists">
                     <Link

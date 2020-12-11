@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<Player
+  Audio={
+    Object {
+      "play": [MockFunction],
+    }
+  }
+  currentStation={
+    Object {
+      "bitrate": 0,
+      "changeuuid": "11f6ad74-ce58-11e8-a54a-52543be04c81",
+      "clickcount": 365,
+      "clicktimestamp": "2020-11-02 19:53:07",
+      "clicktrend": 6,
+      "codec": "MP3",
+      "country": "Kenya",
+      "countrycode": "KE",
+      "favicon": "http://www.mediamaxnetwork.co.ke/wp-content/uploads/2018/10/Kameme-Fm.jpg",
+      "hls": 0,
+      "homepage": "http://www.mediamaxnetwork.co.ke/kameme-radio/",
+      "language": "kikuyu",
+      "lastchangetime": "2020-01-23 20:40:49",
+      "lastcheckok": 1,
+      "lastcheckoktime": "2020-11-02 17:43:48",
+      "lastchecktime": "2020-11-02 17:43:48",
+      "lastlocalchecktime": "2020-11-02 03:04:47",
+      "name": "Kameme fm",
+      "state": "Nairobi",
+      "stationuuid": "11f6ad62-ce58-11e8-a54a-52543be04c81",
+      "tags": "",
+      "url": "http://www.surfmusic.de/m3u/kameme-101-1-fm,3473.m3u",
+      "url_resolved": "http://node-25.zeno.fm/frsvy955puquv?rj-ttl=5&rj-tok=AAABdYoRToUA6Jk3ZJSBrvz1uQ",
+      "votes": 122,
+    }
+  }
+  error={false}
+  handleVolume={[MockFunction]}
+  mute={false}
+  onEnded={[MockFunction]}
+  onError={[MockFunction]}
+  onMute={[MockFunction]}
+  onPause={[MockFunction]}
+  onPlay={[MockFunction]}
+  playing={true}
+  url="http://test/fake-url"
+  volume={5}
+>
+  <div
+    className="player-audio__custom-container"
+  >
+    <div
+      className="player-audio__custom player-audio__loading"
+      onClick={[MockFunction]}
+    >
+      <audio
+        className="player-audio"
+        media-player="audioPlayer"
+        onEnded={[MockFunction]}
+        onError={[MockFunction]}
+        onPause={[MockFunction]}
+        onPlay={[MockFunction]}
+        preload="auto"
+        src="http://test/fake-url"
+        title="Kameme fm"
+      />
+      <div
+        className="circle-wrapper"
+      >
+        <div
+          className="circle border"
+        />
+        <div
+          className="icon"
+        >
+          <i
+            aria-hidden="true"
+            className="fa fa-pause"
+          />
+        </div>
+      </div>
+    </div>
+    <input
+      className="radio__range-volume"
+      max="10"
+      min="0"
+      name="volume"
+      onChange={[MockFunction]}
+      type="range"
+      value={5}
+    />
+    <a
+      onClick={[MockFunction]}
+      style={
+        Object {
+          "cursor": "pointer",
+        }
+      }
+    >
+      <Mute
+        muted={false}
+      >
+        <svg
+          fill="#fff"
+          height="24"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5 17h-5v-10h5v10zm2-10v10l9 5v-20l-9 5zm17 4h-5v2h5v-2zm-1.584-6.232l-4.332 2.5 1 1.732 4.332-2.5-1-1.732zm1 12.732l-4.332-2.5-1 1.732 4.332 2.5 1-1.732z"
+          />
+        </svg>
+      </Mute>
+    </a>
+  </div>
+</Player>
+`;
