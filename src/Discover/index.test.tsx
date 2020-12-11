@@ -14,7 +14,7 @@ describe("<Discover /> should render without crashing", () => {
   });
 });
 
-describe("shoule render sub-components", () => {
+describe("should render sub-components", () => {
   const wrapper = mount(
     <Router>
       <MemoryRouter
@@ -25,6 +25,7 @@ describe("shoule render sub-components", () => {
             state: { name: "josiah" },
             hash: "",
             ...location(10),
+            key: "1",
           },
         ]}
       >
@@ -54,6 +55,7 @@ describe("snapshots", () => {
             state: { name: "josiah" },
             hash: "",
             ...location(10),
+            key: "1",
           },
         ]}
       >
