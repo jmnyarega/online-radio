@@ -64,12 +64,12 @@ describe("Test one favourite list", () => {
       props[0].name
     );
   });
-  it("correct name is displayed", () => {
+  it("correct country is displayed", () => {
     expect(wrapper.find(".mostlistened__country").instance().innerHTML).toBe(
       props[0].country
     );
   });
-  it("correct name is displayed", () => {
+  it("correct bit rate is displayed", () => {
     expect(wrapper.find(".mostlistened__rate").instance().innerHTML).toBe(
       `${props[0].bitrate}kbps`
     );
