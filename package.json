@@ -25,7 +25,7 @@
     "build": "react-scripts build",
     "start": "react-scripts start",
     "lint": "csslint src/**/*.css",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom --verbose",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
