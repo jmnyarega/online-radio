@@ -43,3 +43,11 @@ export const location = (n: number) => ({
   hash: "",
   state: "",
 });
+
+export const countries = (n: number) => {
+  const countries = [];
+  for (let x = 0; x < n; x++) {
+    countries.push({ name: `country-${x}`, stationcount: x });
+  }
+  return countries;
+};

@@ -1,33 +1,66 @@
 import React from "react";
-import { shallow } from "enzyme";
-import { Home } from "./index";
+import { shallow, mount } from "enzyme";
+import toJson from "enzyme-to-json";
+import { BrowserRouter as Router, MemoryRouter } from "react-router-dom";
+import Discover from "./index";
+import Select from "./Components/Select";
+import Results from "./Components/Results";
 import Search from "../Common/search";
-import Loader from "../Common/Loader";
+import { location } from "../tests/__mocks__/data";
 
-const shallowWrapper = shallow(<Home />);
-
-shallowWrapper.setProps({
-  location: { stationNames: [], stationUrls: [], data: { country: "" } },
+describe("<Discover /> should render without crashing", () => {
+  it("search component", () => {
+    expect(shallow(<Discover />));
+  });
 });
 
-describe("<Discover />", () => {
-  const setState = jest.fn();
-  const useStateSpy = jest.spyOn(React, "useState");
-  useStateSpy.mockImplementation(() => [[1, 2, 3, 4], setState]);
-  it("search component", () => {
-    expect(shallowWrapper.find(Search)).toHaveLength(1);
+describe("shoule render sub-components", () => {
+  const wrapper = mount(
+    <Router>
+      <MemoryRouter
+        initialEntries={[
+          {
+            search: "",
+            pathname: "/",
+            state: { name: "josiah" },
+            hash: "",
+            ...location(10),
+          },
+        ]}
+      >
+        <Discover location={location(10)} />
+      </MemoryRouter>
+    </Router>
+  );
+  it("should render <Select />", () => {
+    expect(wrapper.find(Select)).toHaveLength(1);
   });
+  it("should render <Results />", () => {
+    expect(wrapper.find(Results)).toHaveLength(1);
+  });
+  it("should render <Search />", () => {
+    expect(wrapper.find(Search)).toHaveLength(1);
+  });
+});
 
-  it("Loader component", () => {
-    expect(shallowWrapper.find(Loader)).toHaveLength(1);
-  });
-
-  it("select country", () => {
-    //@ts-ignore
-    shallowWrapper.find(".search-input").prop("onChange")({
-      //@ts-ignore
-      currentTarget: { value: "kenya" },
-    });
-    expect(setState).toHaveBeenCalledTimes(0);
-  });
+describe("snapshots", () => {
+  const wrapper = mount(
+    <Router>
+      <MemoryRouter
+        initialEntries={[
+          {
+            search: "",
+            pathname: "/",
+            state: { name: "josiah" },
+            hash: "",
+            ...location(10),
+          },
+        ]}
+      >
+        <Discover location={location(10)} />
+      </MemoryRouter>
+    </Router>
+  );
+  const tree = toJson(wrapper);
+  expect(tree).toMatchSnapshot();
 });

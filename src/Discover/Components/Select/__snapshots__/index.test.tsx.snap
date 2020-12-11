@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<span
+  className="search-custom__select row"
+>
+  <select
+    className="search__select-country block"
+    onChange={[MockFunction]}
+    value="country-1"
+  >
+    <option
+      value=""
+    >
+      ---Select Country---
+    </option>
+    <option
+      className="search__select-data"
+      key="0"
+      value="country-0"
+    >
+      country-0
+    </option>
+    <option
+      className="search__select-data"
+      key="1"
+      value="country-1"
+    >
+      country-1
+    </option>
+    <option
+      className="search__select-data"
+      key="2"
+      value="country-2"
+    >
+      country-2
+    </option>
+    <option
+      className="search__select-data"
+      key="3"
+      value="country-3"
+    >
+      country-3
+    </option>
+    <option
+      className="search__select-data"
+      key="4"
+      value="country-4"
+    >
+      country-4
+    </option>
+  </select>
+  <span
+    className="search-custom__arrow arrow"
+  />
+</span>
+`;
