@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { withRouter } from "react-router-dom";
 import Search from "../Common/search";
 import Results from "./Components/Results/index";
 import Select from "./Components/Select/index";
@@ -76,4 +77,4 @@ export const Discover = ({ location }: any) => {
     </div>
   );
 };
-export default Discover;
+export default withRouter(Discover);

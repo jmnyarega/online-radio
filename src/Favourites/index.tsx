@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import { Istation } from "../Common/types/location";
 import "./index.css";
 
@@ -63,4 +63,5 @@ const Favourites: React.SFC<Iprops> = ({ likedItems }) => (
 );
 
 Favourites.defaultProps = defaultProps;
-export default Favourites;
+// @ts-ignore
+export default withRouter(Favourites);
