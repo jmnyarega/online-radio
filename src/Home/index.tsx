@@ -7,7 +7,7 @@ type Iprops = {
   mostlistened: Array<number>;
 };
 
-export const Home = ({ mostlistened }: Iprops): any => (
+export const Home = ({ mostlistened = [0, 2, 6, 8] }: Iprops): any => (
   <div className="container">
     <div className="main main__background">
       <div className="main-content">
